@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Muli Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Muli-Regular.ttf');
+
+}
+
 html {
     font-size: 2vw;
     /* 1px = 50/1920 */
@@ -7,7 +15,8 @@ body
 {
     background: #fff;
     /* font-family: SF; */
-    font-family: 'Mulish';
+    /* font-family: 'Mulish'; */
+    font-family: 'Muli Regular';
     font-weight: 300;
     position: relative;
     width: 100%;
