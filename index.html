@@ -8,10 +8,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
-
-		<!-- <link rel="stylesheet" href="assets/css/animate.min.css">
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> -->
@@ -24,7 +20,6 @@
                 <div class="navbar-header">
                     <a href="#" class="navbar-brand">
                         <img src="assets/img/bshieldLogo1.svg" class="navbar-logo" alt="navbar img">
-                        <!-- <div class="navbar-title">Logo</div> -->
                     </a>
                 </div>
                 <div class="navbar-menu">
@@ -33,7 +28,7 @@
                         <li><a href="#feature">Features</a></li>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#contact" class="contact-button-container">
-                            <button class="contact-button">Contact Us</button>
+                            <button class="contact-button" id="contact-us">Contact Us</button>
                         </a></li>
                     </ul>
                 </div>
@@ -48,11 +43,17 @@
                 <div class="home-content">
                     <div class="home-content-container">
                         <div class="home-title">
-                            Protecting mobile apps or games against reverse engineering and attacking - It's FREE solution
+                            Protecting mobile applications or games against reverse engineering and attacking - It's FREE solution
                         </div>
-                        <div class="home-description">
-                            Decompiling, hooking or repackaging are common practices to attack mobile applications. BShield make it harder for attackers decompile or tamper your applications, who can steal intellectual property, collect credentials, inject backdoors or clone mobile applications for profit. And more importantly, it's zero cost solution to protect your business and users.                </div>
-                        <button class="home-consult-button">
+                        <div class="home-description-container">
+                            <div class="home-description" id="home-description">
+                                Decompiling, hooking or repackaging are common practices to attack mobile applications. BShield make it harder for attackers decompile or tamper your applications, who can steal intellectual property, collect credentials, inject backdoors or clone mobile applications for profit. And more importantly, it's zero cost solution to protect your business and users.
+                            </div>
+                            <div class="more-description" id="home-description-button" onClick="showMoreDescription()">
+                                More
+                            </div>
+                        </div>
+                        <button class="home-consult-button" id="consult-now">
                             Consult now
                         </button>
                     </div>
@@ -60,23 +61,26 @@
                 <div class="home-image">
                     <div class="home-image-container">
                         <img src="assets/img/ProtectMobile.svg"/>
-                        <!-- <img src="assets/img/bShield.png"/> -->
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="" class="motivation-section">
+            <div class="motivation-left-frame">
+                <img src="assets/img/MotivationLeftFrame.svg"></img>
+            </div>
+            <div class="motivation-right-frame">
+                <img src="assets/img/MotivationRightFrame.svg"></img>
+            </div>
             <div class="common-title-container">
                 <div class = "common-title">
                     BShield’s Motivation
                 </div>
-                <!-- <div class = "common-line">
-                </div> -->
             </div>
             <div class="motivation-description">
-                While web applications are more and more secured, mobile apps are become new gold mine for hackers. 77% of
-                apps had at least one vulnerability on initial scan. That's extremely dangerous for marketplaces, banks, insurance
+                While web applications are more and more secured, mobile applications are become new gold mine for hackers. 77% of
+                applications had at least one vulnerability on initial scan. That's extremely dangerous for marketplaces, banks, insurance
                 companies, and the user himself.
             </div>
             <div class="applications">
@@ -88,7 +92,7 @@
                         <div class="card-container">
                             <div class="card">
                                 <div class="image-container">
-                                    <img class="image" src="assets/img/AppRepack.svg"></img>
+                                    <img class="image" src="assets/img/AppRepackIcon.svg"></img>
                                 </div>
                                 <div class="content-container">
                                     <div class="content">App repackaging or cloning</div>
@@ -100,7 +104,7 @@
                         <div class="card-container">
                             <div class="card">
                                 <div class="image-container">
-                                    <img class="image" src="assets/img/FinancialFraud.svg"></img>
+                                    <img class="image" src="assets/img/FinancialFraudIcon.svg"></img>
                                 </div>
                                 <div class="content-container">
                                     <div class="content">Financial fraud</div>
@@ -112,7 +116,7 @@
                         <div class="card-container">
                             <div class="card">
                                 <div class="image-container">
-                                    <img class="image" src="assets/img/ManInTheMiddle.svg"></img>
+                                    <img class="image" src="assets/img/ManInTheMiddleIcon.svg"></img>
                                 </div>
                                 <div class="content-container">
                                     <div class="content">Man in the middle</div>
@@ -124,7 +128,7 @@
                         <div class="card-container">
                             <div class="card">
                                 <div class="image-container">
-                                    <img class="image" src="assets/img/Extraction.svg"></img>
+                                    <img class="image" src="assets/img/ExtractionIcon.svg"></img>
                                 </div>
                                 <div class="content-container">
                                     <div class="content">Extraction of secret data</div>
@@ -136,7 +140,7 @@
                         <div class="card-container">
                             <div class="card">
                                 <div class="image-container">
-                                    <img class="image" src="assets/img/IPTheft.svg"></img>
+                                    <img class="image" src="assets/img/IPTheftIcon.svg"></img>
                                 </div>
                                 <div class="content-container">
                                     <div class="content">IP theft</div>
@@ -148,7 +152,7 @@
                         <div class="card-container">
                             <div class="card">
                                 <div class="image-container">
-                                    <img class="image" src="assets/img/KeyLogger.svg"></img>
+                                    <img class="image" src="assets/img/KeyLoggerIcon.svg"></img>
                                 </div>
                                 <div class="content-container">
                                     <div class="content">Keylogger</div>
@@ -156,58 +160,72 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="image-container">
-                                    <img class="image" src="assets/img/ReverseEngineering.svg"></img>
-                                </div>
-                                <div class="content-container">
-                                    <div class="content">Reverse engineering</div>
+                    <div class="grid-item initially-hidden" id="reverse-engineering">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img class="image" src="assets/img/ReverseEngineering.svg"></img>
+                                    </div>
+                                    <div class="content-container">
+                                        <div class="content">Reverse engineering</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
-                    <div class="grid-item">
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="image-container">
-                                    <img class="image" src="assets/img/ManyMore.svg"></img>
-                                </div>
-                                <div class="content-container">
-                                    <div class="content">Many more ...</div>
+                    <div class="grid-item initially-hidden" id="many-more">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="image-container">
+                                        <img class="image" src="assets/img/ManyMore.svg"></img>
+                                    </div>
+                                    <div class="content-container">
+                                        <div class="content">Many more ...</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="motivation-learn-button">
-                <button>Learn</button>
+            <div class="motivation-more-button" id="button-more">
+                <button onClick="showHiddenMotivationCard()">More</button>
             </div>
         </section>
         
         <section id="" class="solution-section">
+            <div class="solution-left-frame">
+                <img src="assets/img/TheSolutionLeftFrame.svg"/>
+            </div>
+            <div class="solution-right-frame">
+                <img src="assets/img/TheSolutionRightFrame.svg"/>
+            </div>
             <img class="solution-background" src="assets/img/TheSolution.svg">
                 <div class="solution-content-container">
                     <div class="common-title-container">
                         <div class = "common-title">
                             The Solution
                         </div>
-                        <!-- <div class = "common-line">
-                        </div> -->
                     </div>
                     <div class="solution-description">
-                        It is extremely easy to protect your applications with BShield. The Android or iOS binaries are uploaded, analyzed and secured in minutes on our cloud service. Each applications encrypted, wrappered and protected by an unique shield. After secured, the apps ready for signed and published to public app stores. Based on dectections, BShield helps your applications make right decisions to mitigate security risks.
+                        It is extremely easy to protect your applications with BShield. The Android or iOS binaries are uploaded,
+                        analyzed and secured in minutes on our cloud service. Each applications encrypted, wrappered and
+                        protected by an unique shield. After secured, the applications ready for signed and published to public
+                        app stores. Based on dectections, BShield helps your applications make right decisions to mitigate
+                        security risks.
                     </div>
                 </div>
             </img>
         </section>
         
         <section id="" class="approach-section">
+            <div class="approach-frame">
+                <img src="assets/img/ApproachFrame.svg"/>
+            </div>
             <div class="common-title-container">
                 <div class = "common-title">
                     BShield’s Approach
+                </div>
+                <div class = "approach-description">
+                    BShield implements many techniques to prevent attacker to understand how the application works. 
                 </div>
                 <div class="approaches-container">
                     <div class="approach-item">
@@ -216,23 +234,30 @@
                                 <img class="image" src="assets/img/settingIcon.svg"/>
                             </div>
                             <div class="title">Abuse Prevention</div>
-                            <div class="description">Organize across all apps by hand</div>
                             <div class="details">
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Unlimited Bandwitch</div>
+                                    <div class="content">Rooted device detection</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Encrypted Connection</div>
+                                    <div class="content">Emulator detection</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">No Traffic Logs</div>
+                                    <div class="content">Anti-debugging</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Works on All Devices</div>
+                                    <div class="content">Hooking detection</div>
+                                </div>
+                                <div class="detail-item">
+                                    <img class="mark" src="assets/img/CheckMark.svg"/>
+                                    <div class="content">Repackaging detection</div>
+                                </div>
+                                <div class="detail-item">
+                                    <img class="mark" src="assets/img/CheckMark.svg"/>
+                                    <div class="content">Certificate pinning</div>
                                 </div>
                             </div>
                         </div>
@@ -244,27 +269,18 @@
                                 <img class="image" src="assets/img/lockIcon.svg"/>
                             </div>
                             <div class="title">Code Hardening</div>
-                            <div class="description">Organize across all apps by hand</div>
                             <div class="details">
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Unlimited Bandwitch</div>
+                                    <div class="content">String encryption</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Encrypted Connection</div>
+                                    <div class="content">Resource encrytion</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Yes Traffic Logs</div>
-                                </div>
-                                <div class="detail-item">
-                                    <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Works on All Devices</div>
-                                </div>
-                                <div class="detail-item">
-                                    <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Connect Anyware</div>
+                                    <div class="content">Code obfuscating</div>
                                 </div>
                             </div>
                         </div>
@@ -276,42 +292,30 @@
                                 <img class="image" src="assets/img/chartIcon.svg"/>
                             </div>
                             <div class="title">Real-time Update</div>
-                            <div class="description">Organize across all apps by hand</div>
                             <div class="details">
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Unlimited Bandwitch</div>
+                                    <div class="content">Remote config</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Encrypted Connection</div>
+                                    <div class="content">Customizable</div>
                                 </div>
                                 <div class="detail-item">
                                     <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Yes Traffic Logs</div>
-                                </div>
-                                <div class="detail-item">
-                                    <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Works on All Devices</div>
-                                </div>
-                                <div class="detail-item">
-                                    <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Connect Anyware</div>
-                                </div>
-                                <div class="detail-item">
-                                    <img class="mark" src="assets/img/CheckMark.svg"/>
-                                    <div class="content">Get New Features</div>
+                                    <div class="content">Threats monitoring</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class = "common-line">
-                </div> -->
             </div>
         </section>
 
         <section id="" class="benefit-section">
+            <div class="benefit-left-frame">
+                <img src="assets/img/BenefitLeftFrame.svg"></img>
+            </div>
             <div class="common-title-container">
                 <div class = "common-title">
                     BShield’s Benefits
@@ -324,7 +328,7 @@
                             <img class="image" src="assets/img/shieldTickIcon.svg"/>
                         </div>
                         <div class="title">Comprehensive Protection</div>
-                        <div class="description">BShield protect your apps from both static analysis attacks and run-time attacks. Hidden the shield logic and don't let attacker to understand how your app works.</div>
+                        <div class="description">BShield protect your applications from both static analysis attacks and run-time attacks. Hidden the shield logic and don't let attacker to understand how your application works.</div>
                     </div>
                 </div>
                 <div class="benefit-item">
@@ -332,8 +336,8 @@
                         <div class="image-container">                            
                             <img class="image" src="assets/img/shieldTickIcon.svg"/>
                         </div>
-                        <div class="title">Comprehensive Protection</div>
-                        <div class="description">BShield protect your apps from both static analysis attacks and run-time attacks. Hidden the shield logic and don't let attacker to understand how your app works.</div>
+                        <div class="title">Always Update</div>
+                        <div class="description">We keep catch up new threats of mobile applications and require you to make an on-the-fly update or distribution update to ensure your applications being protected from new threats.</div>
                     </div>
                 </div>
                 <div class="benefit-item">
@@ -341,8 +345,8 @@
                         <div class="image-container">                            
                             <img class="image" src="assets/img/shieldTickIcon.svg"/>
                         </div>
-                        <div class="title">Comprehensive Protection</div>
-                        <div class="description">BShield protect your apps from both static analysis attacks and run-time attacks. Hidden the shield logic and don't let attacker to understand how your app works.</div>
+                        <div class="title">No Significant Impact On Performance</div>
+                        <div class="description">Don't worry about application's performance. Your memory overheads and cpu overheads are no significant impact.</div>
                     </div>
                 </div>
             </div>
@@ -355,21 +359,22 @@
                     <div class = "common-title">
                         ZERO Coding Required
                     </div>
-                    <!-- <div class = "common-line">
-                    </div> -->
                 </div>
                 <div class="coding-required-description">
-                    You only need to focus on developing your apps and let BShield take the responsibility
-                    for the self-protecting business with <b>zero line of coding.</b>
+                    You only need to focus on developing your applications and let BShield take the responsibility for the self-protecting business with
+                    <b>Zero Line of Coding.</b>
                     <br/>
                     <br/>
-                    BShield also provides an optional SDK for your applications implement more
-                    advanced security behaviors.
+                    <br/>
+                    BShield also provides an optional SDK for your applications implement more advanced security behaviors.
                 </div>
             </div>
         </section>
 
         <section id="" class="ready-to-protect-section">
+            <div class="ready-to-protect-frame">
+                <img src="assets/img/ReadyToFrame.svg"></img>
+            </div>
             <img class="ready-to-protect-background" src="assets/img/ReadyToProtect.svg"/>
             <div class="ready-to-protect-container">
                 <div class="ready-to-protect-content-container">
@@ -400,4 +405,6 @@
         </div>
         <div class="footer-title">Copyright © 2022 VNG Corp. All right reserved.</div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </html>
