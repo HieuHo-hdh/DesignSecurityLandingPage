@@ -8,7 +8,7 @@
 
 html {
     font-size: 2vw;
-    /* 1px = 50/1920 */
+    /* 1px = 50/1920 rem */
 }
 
 body
@@ -23,6 +23,7 @@ body
     height: 100%;
     overflow-x: hidden;
     margin: 0;
+    min-width: 1280px;
     /* overflow: hidden; */
 }
 
@@ -120,6 +121,7 @@ button {
     font-size: 22px;
     /* font-size: 0.625rem; */
 }
+
 .navbar .navbar-menu ul li:not(:last-child) a {
     height: 100%;
     display: flex;
@@ -193,10 +195,10 @@ button {
 }
 
 .home-section .container .home-content .home-content-container .home-description-container {
-    margin-bottom: 42px;
+    line-height: 1.52;
     font-weight: 300;
     font-size: 25px;
-    line-height: 38px;
+    margin-bottom: 42px;
 }
 
 .home-section .container .home-content .home-content-container .home-description-container .home-description {
@@ -242,8 +244,8 @@ button {
 }
 
 .home-section .container .home-image-container img{
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 /* common title */
@@ -652,6 +654,7 @@ button {
 .coding-required-section .coding-required-content-container .common-title {
     color: #ffffff;
 }
+
 .coding-required-section .coding-required-content-container .common-line {
     border-color: #ffffff;
 }
@@ -794,7 +797,9 @@ footer .footer-title {
     height: 100%;
 }
 
-/* Responsive 1280, 1281 - 1919, 1920 */
+/* Responsive < 1280, 1281 - 1919, > 1920 */
+
+/* Smaller or equal to 1280 */
 @media screen and ( max-width: 1280px ) {
     /* navigation-bar */
     .navbar {
@@ -824,6 +829,7 @@ footer .footer-title {
     .navbar .navbar-menu ul li a{
         font-size: 14.6px;
     }
+
     .navbar .navbar-menu ul li:not(:last-child) a {
         width: 84.6px;
         font-size: 14.6px;
@@ -840,6 +846,399 @@ footer .footer-title {
         font-size: 14.6px;
         padding: 0 18.6px;
         border-radius: 8px;
+    }
+
+    /* home-section */
+    .home-section {
+        margin-bottom: 42.23px;
+    }
+
+    .home-section .dots {
+        padding-top: 10px;
+    }
+
+    .home-section .container {
+        height: 611.787px;
+    }
+
+    .home-section .container .home-content {
+        padding-top: 32px;
+        padding-left: 152px;    
+    }
+
+    .home-section .container .home-content .home-content-container .home-title {
+        font-size: 36px;
+        padding-bottom: 23.87px;
+        width: 476.6px;
+    }
+
+    .home-section .container .home-content .home-content-container .home-description-container {
+        margin-bottom: 28px;
+        font-size: 16.6px;
+    }
+
+    .home-section .container .home-content .home-content-container .home-description-container .home-description {
+        width: 423.2px;
+        max-height: 126.6px;
+    }
+
+    .home-section .container .home-content .home-content-container .home-consult-button {
+        font-size: 14.6px;
+        border-radius: 66.6px;
+        height: 44.8px;
+        padding: 0 36px;
+    }
+
+    .home-section .container .home-image-container {
+        width: 814.6px;
+    }
+
+    /* common title */
+    .common-title-container {
+        font-size: 28.7px;
+    }
+
+    .common-title-container .common-line {
+        border-bottom: 1.6px solid #000000;
+        width: 44.8px;
+        margin: 20px auto;
+    }
+
+    .common-title-container::after {
+        margin-left: -33.3px;
+        width: 44.8px;
+        border-bottom: 1.6px solid black;
+    }
+
+    /* motivation-section */
+    .motivation-section {
+        margin-bottom: 66.6px;
+    }
+
+    .motivation-section .motivation-left-frame {
+        width: 597.83px;
+        height: 774.353px;
+    }
+
+    .motivation-section .motivation-right-frame {
+        padding-right: 142.87px;
+        padding-top: 475.47px;
+    }
+
+    .motivation-section .motivation-right-frame img {
+        height: 92px;
+        width: 105.27px;
+    }
+
+    .motivation-section .motivation-description {
+        font-size: 14.67px;
+        padding: 0 224px 13.3px;
+    }
+
+    .motivation-section .applications {
+        margin-bottom: 50px;
+    }
+
+    .motivation-section .applications .applications-title {
+        padding: 0 250px 32px;
+        font-size: 14.67px;
+    }
+
+    .motivation-section .applications .applications-grid-container {
+        margin: 0 178px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item {
+        padding: 14px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container {
+        width: 280px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card {
+        box-shadow: 2.67px 2.67px 26.7px rgba(0, 0, 0, 0.2);
+        padding: 45.3px 0;
+        border-radius: 16px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .image-container {
+        height: 90px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .image-container .image{
+        width: 124.67px;
+        height: 72.67px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container {
+        height: 40px;
+        padding: 0 72px;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
+        font-size: 16px;
+    }
+
+    .motivation-section .motivation-more-button button {
+        height: 44.8px ;
+        border-radius: 44px;
+        border: 1.33px solid #157FFB;
+        width: 160px;
+        font-size: 14px;
+    }
+
+    /* solution-section */
+    .solution-section {
+        height: 340px;
+        margin-bottom: 55.3px;
+    }
+
+    .solution-section .solution-left-frame {
+        padding-top: 245.6px;
+        padding-left: 152px;
+    }
+
+    .solution-section .solution-right-frame {
+        padding-right: 152.3px;
+        transform: translate(0, -9.86px);
+    }
+
+    .solution-section .solution-left-frame img, .solution-section .solution-right-frame img {
+        width: 105.26px;
+        height: 92px;
+    }
+
+    .solution-section .solution-background {
+        padding: 0 192px;
+        width: calc(100% - 192px * 2);
+    }
+
+    .solution-section .solution-content-container {
+        transform: translate(0, -346.67px);
+        /* padding: 76.8px 435px 0; */
+        padding: 66.67px 290px 0;
+    }
+
+    .solution-section .solution-content-container .solution-description {
+        font-size: 14.67px;
+    }
+
+    .solution-section .common-line {
+        border-color: #ffffff;
+    }
+
+    /* approach-section */
+    .approach-section {
+        margin-bottom: 54.4px;
+    }
+
+    .approach-section .approach-frame {
+        padding-top: 94.13px;
+        transform: translate(17.8px, 0);
+    }
+
+    .approach-section .approach-frame img {
+        width: 105.27px;
+        height: 92px;
+    }
+
+    .approach-section .approach-description {
+        font-size: 14.67px;
+        padding-bottom: 50px;
+    }
+
+    .approach-section .approaches-container {
+        padding: 0 171.3px;
+    }
+
+    .approach-section .approaches-container .approach-item {
+        padding: 0 20.67px;
+    }
+
+    .approach-section .approaches-container .approach-item .card {
+        box-shadow: 2.67px 2.67px 26.7px rgba(0, 0, 0, 0.2);
+        border-radius: 10.67px;
+        padding-top: 36.67px;
+        height: 425.33px;
+    }
+
+    .approach-section .approaches-container .approach-item .card .image-container {
+        margin-bottom: 29.73px;
+    }
+
+    .approach-section .approaches-container .approach-item .card .image-container .image {
+        height: 76px;
+        width: 76px;
+    }
+
+    .approach-section .approaches-container .approach-item .card .title {
+        font-size: 16px;
+        padding-bottom: 29.73px;
+    }
+
+    .approach-section .approaches-container .approach-item .card .details .detail-item {
+        padding-bottom: 8.6px;
+    }
+
+    .approach-section .approaches-container .approach-item .card .details .detail-item .mark {
+        padding-right: 18.67px;
+    }
+
+    .approach-section .approaches-container .approach-item .card .details .detail-item .content {
+        font-size: 14.67px;
+    }
+
+    /* benefit-section */
+
+    .benefit-section {
+        margin-bottom: 66.67px;
+    }
+
+    .benefit-section .benefit-left-frame {
+        padding-top: 83.113px;
+        padding-left: 152.8px;
+    }
+
+    .benefit-section .benefit-left-frame img {
+        width: 105.26px;
+        height: 92px;
+    }
+
+    .benefit-section .benefit-right-frame {
+        padding-right: 152.3px;
+        transform: translate(0, -9.87px);
+    }
+
+    .benefit-section .common-line {
+        margin-bottom: 50.44px;
+    }
+
+    .benefit-section .benefits-container {
+        padding: 0 178px;
+    }
+
+    .benefit-section .benefits-container .benefit-item {
+        padding: 0 9.3px;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card {
+        border-radius: 16px;
+        padding-top: 60px;
+        height: 371.3px;
+        box-shadow: 2.67px 2.67px 26.7px rgba(0, 0, 0, 0.2);
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .image-container {
+        margin-bottom: 30px;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .image-container .image {
+        height: 76px;
+        width: 76px;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .title {
+        font-size: 16px;
+        padding: 0 43.3px 10px;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .description {
+        font-size: 14.67px;
+        padding: 0 33.3px;
+    }
+
+    /* coding-required section */
+
+    .coding-required-section {
+        margin-bottom: 50.4px;
+    }
+
+    .coding-required-section .coding-required-content-container {
+        padding-top: 200px;
+        padding-left: 70.67px;
+        width: 627.3px;
+        transform: translate(0, calc(100vw * -912/1920 - 6.66px));
+
+    }
+
+    .coding-required-content-container .coding-required-description {
+        font-size: 14.67px;
+    }
+
+    /* ready-to-protect-section */
+
+    .ready-to-protect-section {
+        height: 212px;
+        margin-bottom: 50px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-frame {
+        padding-top: 219.56px;
+        padding-right: 73.13px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-frame img { 
+        Width: 105.26px;
+        height: 92px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-background {
+        padding: 0 192px;
+        width: calc(100% - 192px * 2);
+    }
+
+    .ready-to-protect-section .ready-to-protect-container {
+        transform: translate(0, -218.67px);
+        padding: 0 306.6px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
+        padding-top: 62px;
+        width: 250px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
+        font-size: 28.6px;
+        padding-bottom: 22.33px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-description {
+        font-size: 14.67px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button { 
+        width: 166.67px;
+        height: 40px;
+        border-radius: 66.66px;
+        padding: 0 27.3px;
+        font-size: 14px;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
+        margin-bottom: 10.33px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 65.3px;
+    }
+
+    footer .footer-icon-container {
+        left: 153.33px;
+    }
+
+    footer .footer-icon-container .footer-icon-items-container {
+        height: 65.3px;
+    }
+
+    footer .footer-icon-container .footer-icon-items-container .footer-icon-item {
+        padding: 23.3px 20px;
+    }
+
+    footer .footer-title {
+        font-size: 12px;
     }
 }
 
@@ -889,4 +1288,6 @@ footer .footer-title {
         padding: 0 28px;
         border-radius: 12px;
     } */
+
+    
 }
