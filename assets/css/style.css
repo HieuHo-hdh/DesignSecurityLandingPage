@@ -239,11 +239,11 @@ button {
     border: #157FFB;
     color: #FFFFFF;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.255;
     font-size: 22px;
     border-radius: 100px;
     height: 67.2px;
-    padding: 0 54px;
+    padding: 0 54px 5px;
     cursor: pointer;
 }
 
@@ -936,7 +936,7 @@ footer .footer-title {
         font-size: 14.6px;
         border-radius: 66.6px;
         height: 44.8px;
-        padding: 0 36px;
+        padding: 0 36px 3.33px;
     }
 
     .home-section .container .home-image-container {
@@ -1391,7 +1391,7 @@ footer .footer-title {
         font-size: 0.573rem;
         border-radius: 2.6rem;
         height: 1.75rem;
-        padding: 0 1.40625rem;
+        padding: 0 1.40625rem 0.13rem;
     }
 
     .home-section .container .home-image-container {
