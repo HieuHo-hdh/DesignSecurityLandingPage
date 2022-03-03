@@ -18,7 +18,6 @@ function showHiddenMotivationCard() {
 }
 
 // OnClick => Route to another page
-
 document.getElementById("consult-now").onclick = function () {
     location.href = "https://www.google.com";
 };

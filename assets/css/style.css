@@ -3,7 +3,20 @@
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/Muli-Regular.ttf');
+}
 
+@font-face {
+    font-family: 'Muli Light';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url('../fonts/Muli Light.ttf');
+}
+
+@font-face {
+    font-family: 'Muli Bold';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url('../fonts/Muli-Bold.ttf');
 }
 
 html {
@@ -130,7 +143,7 @@ button {
     border-radius: 12px;
 }
 
-.navbar .navbar-menu ul li:not(:last-child):hover a, 
+.navbar .navbar-menu ul li:not(:last-child) a:hover, 
 .navbar .navbar-menu ul li:not(:last-child) a:focus {
     border: #FFFFFF;
     background: #FFFFFF;
@@ -139,8 +152,6 @@ button {
 }
 
 .navbar .navbar-menu ul li .contact-button-container {
-    /* height: calc(100% - 80px);
-    margin: 40px 0; */
     height: calc(100% - 56px);
     margin: 28px 0;
     margin-left: 20px;
@@ -181,6 +192,7 @@ button {
 }
 
 .home-section .container .home-content .home-content-container .home-title {
+    font-family: 'Muli Bold';
     color: #000000;
     font-weight: 700;
     line-height: 1.24;
@@ -217,6 +229,7 @@ button {
 }
 
 .home-section .container .home-content .home-content-container .home-consult-button {
+    font-family: 'Muli Bold';
     background: #157FFB;
     border: #157FFB;
     color: #FFFFFF;
@@ -245,8 +258,8 @@ button {
 
 /* common title */
 .common-title-container {
-    /* font-weight: 700; */
-    font-weight: 900;
+    font-family: 'Muli Bold';
+    font-weight: 700;
     font-size: 43px;
     line-height: 1.56;
 }
@@ -299,9 +312,10 @@ button {
 }
 
 .motivation-section .motivation-description {
+    font-family: 'Muli Light';
     color: #7D7987;
     text-align: center;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.63;
     font-size: 22px;
     padding: 0 336px 20px;
@@ -312,6 +326,7 @@ button {
 }
 
 .motivation-section .applications .applications-title {
+    font-family: 'Muli Bold';
     font-weight: 700;
     line-height: 1.63;
     color: #7D7987;
@@ -362,10 +377,11 @@ button {
     align-items: center;
     place-content: center;
     height: 60px;
-    padding: 0 108px;
+    padding: 0 105px;
 }
 
 .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
+    font-family: 'Muli Bold';
     font-weight: 700;
     font-size: 24px;
     line-height: 1.255;
@@ -439,8 +455,9 @@ button {
 
 .solution-section .solution-content-container {
     transform: translate(0, -520px);
-    padding: 76.8px 435px 0;
-    padding: 100px 435px 0;
+    /* padding: 76.8px 435px 0; */
+    /* padding: 100px 435px 0; */
+    padding: 100px 410px 0;
 
 }
 
@@ -453,6 +470,7 @@ button {
 }
 
 .solution-section .solution-content-container .solution-description {
+    font-family: 'Muli Light';
     font-weight: 300;
     line-height: 1.63;
     text-align: center;
@@ -480,6 +498,7 @@ button {
 }
 
 .approach-section .approach-description {
+    font-family: 'Muli Light';
     color: #7D7987;
     font-weight: 300;
     line-height: 1.36;
@@ -519,11 +538,12 @@ button {
 }
 
 .approach-section .approaches-container .approach-item .card .title {
+    font-family: 'Muli Bold';
     line-height: 1.54;
     font-weight: 700;
     text-align: center;
     font-size: 24px;
-    padding-bottom: 44.6px;
+    padding-bottom: 35.41px;
 }
 
 .approach-section .approaches-container .approach-item .card .details {
@@ -614,11 +634,13 @@ button {
 }
 
 .benefit-section .benefits-container .benefit-item .card .title {
+    font-family: 'Muli Bold';
     font-weight: 700;
     text-align: center;
     line-height: 1.6;
     font-size: 24px;
     padding: 0 65px 15px;
+    min-height: 76.8px;
 }
 
 .benefit-section .benefits-container .benefit-item .card .description {
@@ -663,11 +685,16 @@ button {
 }
 
 .coding-required-content-container .coding-required-description {
+    font-family: 'Muli Light';
     font-weight: 300;
     text-align: center;
     font-size: 22px;
     line-height: 1.27;
     color: #FFFFFF;
+}
+
+.coding-required-content-container .coding-required-description b {
+    font-family: 'Muli Bold';
 }
 
 /* ready-to-protect-section */
@@ -707,15 +734,18 @@ button {
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
     padding-top: 93px;
-    width: 375px;
+    /* width: 375px; */
+    width: 380px;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
+    font-family: 'Muli Bold';
     font-weight: 700;
     color: #ffffff;
     font-size: 43px;
     line-height: 1.047;
-    padding-bottom: 33.5px;
+    /* padding-bottom: 33.5px; */
+    padding-bottom: 23.46px;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-description {
@@ -812,7 +842,7 @@ footer .footer-title {
 
     .navbar-default
     {
-        height: 90.6px;
+        height: 74px;
         margin-bottom: 54.6px;
     }
 
@@ -826,8 +856,8 @@ footer .footer-title {
 
     .navbar .navbar-menu ul li:not(:last-child)
     {
-        padding: 26.6px 10px;
-        height: calc(100% - 53.3px);
+        padding: 18.67px 10px;
+        height: calc(100% - 37.3px);
     }
 
     .navbar .navbar-menu ul li a{
@@ -841,8 +871,8 @@ footer .footer-title {
     }
 
     .navbar .navbar-menu ul li .contact-button-container {
-        height: calc(100% - 53.3px);
-        margin: 14.6px 0;
+        height: calc(100% - 37.3px);
+        margin: 18.67px 0;
         margin-left: 13.3px;
     }
 
@@ -944,6 +974,7 @@ footer .footer-title {
     }
 
     .motivation-section .applications .applications-title {
+        font-family: 'Muli Bold';
         padding: 0 250px 32px;
         font-size: 14.67px;
     }
@@ -1021,7 +1052,8 @@ footer .footer-title {
     .solution-section .solution-content-container {
         transform: translate(0, -346.67px);
         /* padding: 76.8px 435px 0; */
-        padding: 66.67px 290px 0;
+        /* padding: 66.67px 290px 0; */
+        padding: 66.67px 273.3px 0;
     }
 
     .solution-section .solution-content-container .solution-description {
@@ -1078,7 +1110,7 @@ footer .footer-title {
 
     .approach-section .approaches-container .approach-item .card .title {
         font-size: 16px;
-        padding-bottom: 29.73px;
+        padding-bottom: 23.6px;
     }
 
     .approach-section .approaches-container .approach-item .card .details .detail-item {
@@ -1154,7 +1186,7 @@ footer .footer-title {
 
     .benefit-section .benefits-container .benefit-item .card .description {
         font-size: 14.67px;
-        padding: 0 33.3px;
+        padding: 0 32.9px
     }
 
     /* coding-required section */
@@ -1206,12 +1238,13 @@ footer .footer-title {
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
         padding-top: 62px;
-        width: 250px;
+        /* width: 250px; */
+        width: 253.3px;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
         font-size: 28.6px;
-        padding-bottom: 22.33px;
+        padding-bottom: 15.64px;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-description {
@@ -1262,7 +1295,7 @@ footer .footer-title {
 
     .navbar-default
     {
-        height: 3.54rem;
+        height: 2.89rem;
         margin-bottom: 2.135rem;
     }
 
@@ -1276,8 +1309,8 @@ footer .footer-title {
 
     .navbar .navbar-menu ul li:not(:last-child)
     {
-        padding: 1.04rem 0.39rem;
-        height: calc(100% - 2.08rem);
+        padding: 0.73rem 0.39rem;
+        height: calc(100% - 1.46rem);
     }
 
     .navbar .navbar-menu ul li a{
@@ -1291,8 +1324,8 @@ footer .footer-title {
     }
 
     .navbar .navbar-menu ul li .contact-button-container {
-        height: calc(100% - 2.08rem);
-        margin: 1.04rem 0;
+        height: calc(100% - 1.46rem);
+        margin: 0.73rem 0;
         margin-left: 0.52rem;
     }
 
@@ -1474,7 +1507,8 @@ footer .footer-title {
 
     .solution-section .solution-content-container {
         transform: translate(0, -13.54rem);
-        padding: 2.6rem 11.328rem 0;
+        /* padding: 2.6rem 11.328rem 0; */
+        padding: 2.6rem 10.68rem 0;
     }
 
     .solution-section .common-line {
@@ -1531,7 +1565,7 @@ footer .footer-title {
 
     .approach-section .approaches-container .approach-item .card .title {
         font-size: 0.625rem;
-        padding-bottom: 1.61rem;
+        padding-bottom: 0.92rem;
     }
 
     .approach-section .approaches-container .approach-item .card .details .detail-item {
@@ -1665,12 +1699,13 @@ footer .footer-title {
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
         padding-top: 2.42rem;
-        width: 9.77rem;
+        /* width: 9.77rem; */
+        width: 9.9rem;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
         font-size: 1.12rem;
-        padding-bottom: 0.87rem;
+        padding-bottom: 0.61rem;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-description {
