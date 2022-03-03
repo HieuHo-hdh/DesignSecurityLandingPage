@@ -43,7 +43,7 @@ button {
 {
     background: #157FFB;
     border: none;
-    height: 136px;
+    height: 111px;
     margin-bottom: 82px;
 }
 
@@ -102,8 +102,8 @@ button {
 
 .navbar .navbar-menu ul li:not(:last-child)
 {
-    padding: 40px 15px;
-    height: calc(100% - 80px);
+    padding: 28px 15px;
+    height: calc(100% - 56px);
 }
 
 .navbar .navbar-menu ul li a{
@@ -130,7 +130,7 @@ button {
     border-radius: 12px;
 }
 
-.navbar .navbar-menu ul li:not(:last-child) a:hover, 
+.navbar .navbar-menu ul li:not(:last-child):hover a, 
 .navbar .navbar-menu ul li:not(:last-child) a:focus {
     border: #FFFFFF;
     background: #FFFFFF;
@@ -139,8 +139,10 @@ button {
 }
 
 .navbar .navbar-menu ul li .contact-button-container {
-    height: calc(100% - 80px);
-    margin: 40px 0;
+    /* height: calc(100% - 80px);
+    margin: 40px 0; */
+    height: calc(100% - 56px);
+    margin: 28px 0;
     margin-left: 20px;
 }
 
@@ -243,7 +245,8 @@ button {
 
 /* common title */
 .common-title-container {
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-weight: 900;
     font-size: 43px;
     line-height: 1.56;
 }
@@ -298,7 +301,7 @@ button {
 .motivation-section .motivation-description {
     color: #7D7987;
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.63;
     font-size: 22px;
     padding: 0 336px 20px;
@@ -450,7 +453,7 @@ button {
 }
 
 .solution-section .solution-content-container .solution-description {
-    font-weight: normal;
+    font-weight: 300;
     line-height: 1.63;
     text-align: center;
     color: #ffffff;
