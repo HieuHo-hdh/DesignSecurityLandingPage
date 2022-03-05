@@ -35,7 +35,7 @@ body
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    min-width: 1280px;
+    /* min-width: 1280px; */
     max-width: 1920px;
     position: relative;
     overflow: hidden;
@@ -56,7 +56,8 @@ button {
 {
     background: #157FFB;
     border: none;
-    height: 111px;
+    /* height: 111px; */
+    height: 100px;
     margin-bottom: 82px;
 }
 
@@ -83,8 +84,8 @@ button {
 
 .navbar .navbar-header .navbar-brand img{
     width: auto;
-    height: 74.47px;
-    /* height: 92.47px; */
+    /* height: 74.47px; */
+    height: 67px;
 }
 
 .navbar .navbar-menu {
@@ -115,8 +116,8 @@ button {
 
 .navbar .navbar-menu ul li:not(:last-child)
 {
-    padding: 28px 15px;
-    height: calc(100% - 56px);
+    padding: 23px 15px;
+    height: calc(100% - 46px);
 }
 
 .navbar .navbar-menu ul li a{
@@ -152,8 +153,8 @@ button {
 }
 
 .navbar .navbar-menu ul li .contact-button-container {
-    height: calc(100% - 56px);
-    margin: 28px 0;
+    height: calc(100% - 46px);
+    margin: 23px 0;
     margin-left: 20px;
 }
 
@@ -796,12 +797,13 @@ button {
     background: #157FFB;
     border: #157FFB;
     margin-bottom: 15.5px;
+    cursor: pointer;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .contact-button {
     background: #30A64A;
     border: #30A64A;
-
+    cursor: pointer;
 }
 
 /* footer */
@@ -857,7 +859,7 @@ footer .footer-title {
 
     .navbar-default
     {
-        height: 74px;
+        height: 66.6px;
         margin-bottom: 54.6px;
     }
 
@@ -866,13 +868,13 @@ footer .footer-title {
     }
 
     .navbar .navbar-header .navbar-brand img{
-        height: 49.646px;
+        height: 44.68px;
     }
 
     .navbar .navbar-menu ul li:not(:last-child)
     {
-        padding: 18.67px 10px;
-        height: calc(100% - 37.3px);
+        padding: 15.3px 10px;
+        height: calc(100% - 30.6px);
     }
 
     .navbar .navbar-menu ul li a{
@@ -886,8 +888,8 @@ footer .footer-title {
     }
 
     .navbar .navbar-menu ul li .contact-button-container {
-        height: calc(100% - 37.3px);
-        margin: 18.67px 0;
+        height: calc(100% - 30.6px);
+        margin: 15.3px 0;
         margin-left: 13.3px;
     }
 
@@ -1311,7 +1313,7 @@ footer .footer-title {
 
     .navbar-default
     {
-        height: 2.89rem;
+        height: 2.601rem;
         margin-bottom: 2.135rem;
     }
 
@@ -1320,13 +1322,13 @@ footer .footer-title {
     }
 
     .navbar .navbar-header .navbar-brand img{
-        height: 1.94rem;
+        height: 1.746rem;
     }
 
     .navbar .navbar-menu ul li:not(:last-child)
     {
-        padding: 0.73rem 0.39rem;
-        height: calc(100% - 1.46rem);
+        padding: 0.657rem 0.39rem;
+        height: calc(100% - 1.314rem);
     }
 
     .navbar .navbar-menu ul li a{
@@ -1340,8 +1342,8 @@ footer .footer-title {
     }
 
     .navbar .navbar-menu ul li .contact-button-container {
-        height: calc(100% - 1.46rem);
-        margin: 0.73rem 0;
+        height: calc(100% - 1.198rem);
+        margin: 0.599rem 0;
         margin-left: 0.52rem;
     }
 
