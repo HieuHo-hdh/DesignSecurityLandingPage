@@ -58,7 +58,7 @@ button {
     border: none;
     /* height: 111px; */
     height: 100px;
-    margin-bottom: 82px;
+    /* margin-bottom: 82px; */
 }
 
 .navbar-default .container {
@@ -69,6 +69,8 @@ button {
 
 .navbar-fixed-top {
     top: 0;
+    z-index: 100;
+    position: fixed;
 }
 
 .navbar .navbar-header{
@@ -175,6 +177,7 @@ button {
 
 /* home-section */
 .home-section {
+    margin-top: 182px;
     margin-bottom: 63.34px;
 }
 
@@ -901,6 +904,7 @@ footer .footer-title {
 
     /* home-section */
     .home-section {
+        margin-top: 121.3px;
         margin-bottom: 42.23px;
     }
 
@@ -1356,6 +1360,7 @@ footer .footer-title {
     /* home-section */
     
     .home-section {
+        margin-top: 4.74rem;
         margin-bottom: 1.65rem;
     }
 
