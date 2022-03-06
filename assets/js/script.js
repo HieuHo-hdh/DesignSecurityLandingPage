@@ -24,6 +24,9 @@ document.getElementById("consult-now").onclick = function () {
 document.getElementById("contact-us").onclick = function () {
     location.href = "https://www.google.com";
 };
+document.getElementById("mobile-contact-us").onclick = function () {
+    location.href = "https://www.google.com";
+};
 
 // Ready to protect your application
 document.getElementById("request-demo").onclick = function () {
@@ -52,50 +55,6 @@ document.getElementById("footer-linkedin").onclick = function () {
           minute = second * 60,
           hour = minute * 60,
           day = hour * 24;
-    // Option 1, 2: Initialize new year value
-    // let today = new Date(),
-    //     dd = String(today.getDate()).padStart(2, "0"),
-    //     mm = String(today.getMonth() + 1).padStart(2, "0"),
-    //     yyyy = today.getFullYear();
-    //     today = mm + "/" + dd + "/" + yyyy;
-
-    // //Option 1: If want year automatically update
-    // let nextYear = yyyy + 1,
-    //     dayMonth = "03/30/",
-    //     reachTime = dayMonth + yyyy;
-    // if (today > reachTime) {
-    //     reachTime = dayMonth + nextYear;
-    // }
-    // const countDown = new Date(reachTime).getTime();
-
-    // // Option 2: If want fixed year
-    // let endTime = "03/30/2022";
-    // const countDown = new Date(endTime).getTime();
-
-    // Set interval
-    // x = setInterval(
-    //     function() {
-    //         const now = new Date().getTime();
-    //         const distance = countDown - now;
-    //         if (Math.floor(distance / (day)) < 10) 
-    //             document.getElementById("days").innerText = '0' + Math.floor(distance / (day));
-    //         else document.getElementById("days").innerText = Math.floor(distance / (day));
-    //         if (Math.floor((distance % (day)) / (hour)) < 10) 
-    //             document.getElementById("hours").innerText = '0' + Math.floor((distance % (day)) / (hour));
-    //         else document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
-    //         if (Math.floor((distance % (hour)) / (minute)) < 10) 
-    //             document.getElementById("minutes").innerText ='0' +  Math.floor((distance % (hour)) / (minute));
-    //         else document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
-    //         if (Math.floor((distance % (minute)) / second) < 10) 
-    //             document.getElementById("seconds").innerText = '0' + Math.floor((distance % (minute)) / second);
-    //         else document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-    //         if (distance < 0) {
-    //             clearInterval(x);
-    //         }
-    //     }, 0)
-    // }()
-    
-    //Option 3: If want set time distance
     let fixeddays = 7,
         fixedhours = 3,
         fixedminutes = 4,
@@ -103,7 +62,7 @@ document.getElementById("footer-linkedin").onclick = function () {
     let countDown = fixeddays *day + fixedhours *hour + fixedminutes *minute + fixedsecs;
     x = setInterval(
         function() {
-            countDown = countDown - 1;
+            countDown = countDown - 4;
             let timeRemaining = countDown;
             if (Math.floor(timeRemaining / (day)) < 10) 
                 document.getElementById("days").innerText = '0' + Math.floor(timeRemaining / (day));
@@ -123,3 +82,27 @@ document.getElementById("footer-linkedin").onclick = function () {
         }, 0)
     }()
 );
+
+//On Click => show & hide menu - mobile
+function showNavBarMobile() {
+    var appSidebar = document.getElementById("app-sidebar");
+    var appSidebarContent = document.getElementById("app-sidebar-content");
+    appSidebar.style.display= "block";
+    x = setTimeout(
+        function() {
+            appSidebarContent.style.transform = "translateX(99.9%)";
+        }, 1
+    )
+    appSidebar.className="app-sidebar open";
+}
+
+function hideNavBarMobile() {
+    var appSidebar = document.getElementById("app-sidebar");
+    var appSidebarContent = document.getElementById("app-sidebar-content");
+    x = setTimeout(
+        function() {
+            appSidebarContent.style.transform = "unset";
+        }, 1
+    )
+    appSidebar.className="app-sidebar";
+}

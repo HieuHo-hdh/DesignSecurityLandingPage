@@ -9,6 +9,7 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> -->
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -24,7 +25,7 @@
                     </a>
                 </div>
                 <div class="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Pricing</a></li>
@@ -32,6 +33,40 @@
                             <button class="contact-button" id="contact-us">Contact Us</button>
                         </a></li>
                     </ul>
+                </div>
+                <div class="mobile-navbar">
+                    <div class="header-contact-container">
+                        <div class="contact-button-container">
+                            <button class="contact-button" id="mobile-contact-us">
+                                <div class="button-content">
+                                    Contact
+                                </div>
+                            </button>
+                        </div>
+                        <button class="menu-button-container" onClick="showNavBarMobile()">
+                            <i class="material-icons">menu</i>
+                        </button>
+                    </div>
+                    <div class="app-sidebar" id="app-sidebar">
+                        <div class="app-sidebar-backdrop"></div>
+                        <div class="app-sidebar-content" id="app-sidebar-content">
+                            <div class="app-sidebar-content-container">
+                                <div class="title-container">
+                                    <div class="title">Menu</div>
+                                </div>
+                                <button class="close-button-container" onClick="hideNavBarMobile()">
+                                    <i class="material-icons">close</i>
+                                </button>
+                            </div>
+                            <div class="menu-container">
+                                <ul class="nav navbar-right">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -62,13 +97,11 @@
                 <div class="home-content">
                     <div class="home-content-container">
                         <div class="home-title">
-                            <!-- Protecting mobile applications or games against reverse engineering and attacking - It's FREE solution -->
-                            It's FREE solution for protecting mobile applications or games
+                            It"s FREE solution for protecting mobile applications or games
                         </div>
                         <div class="home-description-container">
                             <div class="home-description" id="home-description">
-                                <!-- Decompiling, hooking or repackaging are common practices to attack mobile applications. BShield make it harder for attackers decompile or tamper your applications, who can steal intellectual property, collect credentials, inject backdoors or clone mobile applications for profit. And more importantly, it's zero cost solution to protect your business and users. -->
-                                BShield make it harder for attackers decompile or tamper your applications, who can steal intellectual property, collect credentials, inject backdoors or clone mobile applications for profit. And more importantly, it's zero cost solution to protect your business and users.
+                                BShield make it harder for attackers decompile or tamper your applications, who can steal intellectual property, collect credentials, inject backdoors or clone mobile applications for profit. And more importantly, it"s zero cost solution to protect your business and users.
                             </div>
                         </div>
                         <div class="home-timer">
@@ -150,7 +183,7 @@
             </div>
             <div class="motivation-description">
                 While web applications are more and more secured, mobile applications are become new gold mine for hackers. 77% of
-                applications had at least one vulnerability on initial scan. That's extremely dangerous for marketplaces, banks, insurance
+                applications had at least one vulnerability on initial scan. That"s extremely dangerous for marketplaces, banks, insurance
                 companies, and the user himself.
             </div>
             <div class="applications">
@@ -404,7 +437,7 @@
                             <img class="image" src="assets/img/shieldTickIcon.svg"/>
                         </div>
                         <div class="title">Comprehensive Protection</div>
-                        <div class="description">BShield protect your applications from both static analysis attacks and run-time attacks. Hidden the shield logic and don't let attacker to understand how your application works.</div>
+                        <div class="description">BShield protect your applications from both static analysis attacks and run-time attacks. Hidden the shield logic and don"t let attacker to understand how your application works.</div>
                     </div>
                 </div>
                 <div class="benefit-item">
@@ -422,7 +455,7 @@
                             <img class="image" src="assets/img/chartIcon.svg"/>
                         </div>
                         <div class="title">No Significant Impact On Performance</div>
-                        <div class="description">Don't worry about application's performance. Your memory overheads and cpu overheads are no significant impact.</div>
+                        <div class="description">Don"t worry about application"s performance. Your memory overheads and cpu overheads are no significant impact.</div>
                     </div>
                 </div>
             </div>

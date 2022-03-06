@@ -81,6 +81,10 @@ button {
     position: fixed;
 }
 
+.navbar .app-sidebar {
+    display: none;
+}
+
 .navbar .navbar-header{
     height: 100%;
     position: relative;
@@ -181,6 +185,10 @@ button {
     padding: 0 28px;
     border-radius: 12px;
     cursor: pointer;
+}
+
+.mobile-navbar {
+    display: none;
 }
 
 /* home-section */
@@ -991,10 +999,194 @@ footer .footer-title {
     height: 100%;
 }
 
-/* Responsive < 1280, 1281 - 1919, > 1920 */
+/* Responsive < 1080, 1081 - 1280, 1281 - 1919, > 1920 */
 
-/* Smaller or equal to 1280 */
-@media screen and ( max-width: 1280px ) {
+/* Smaller than 1080 */
+@media screen and ( max-width: 1080px ) {
+    .navbar {
+        /* margin-bottom: 0.78125rem; */
+        margin-bottom: 3.623rem;
+    }
+
+    .navbar-default {
+        /* height: 1.744rem; */
+        height: 8.089rem;
+    }
+
+    .navbar-default .container {
+        /* padding: 0 0.625rem; */
+        padding: 0 2.89rem;
+    }
+
+    .navbar .navbar-header .navbar-brand img {
+        /* height: 0.8rem; */
+        height: 3.71rem;
+    }
+
+    .navbar .navbar-menu {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    .mobile-navbar .header-contact-container {
+        display: flex;
+        position: absolute;
+        height: 100%;
+        align-items: center;
+        right: 2.89rem;
+    }
+
+    .mobile-navbar .header-contact-container .contact-button-container {
+        border: 0;
+        border-radius: 0.72rem;
+        padding: 0.75rem 1.68rem;
+        background: #FF6937;
+        border: #FF6937 solid 0.18rem;
+        cursor: pointer;
+    }
+
+    .mobile-navbar .header-contact-container .contact-button-container .contact-button {
+        background: none;
+        border: none;
+        height: 100%;
+    }
+
+    .mobile-navbar .header-contact-container .contact-button-container .contact-button .button-content {
+        font-size: 2.3rem;
+        color: #ffffff;
+    }
+
+    .mobile-navbar .header-contact-container .menu-button-container {
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.72rem;
+        border: #FF6937;
+        background: #FF6937;
+        margin-left: 1.2rem;
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+    }
+
+    .mobile-navbar .header-contact-container .menu-button-container i.material-icons {
+        font-size: 4rem;
+    }
+    
+    .navbar .app-sidebar {
+        display: none;
+    }
+
+    .navbar .app-sidebar {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 30;
+    }
+
+    .navbar .app-sidebar .app-sidebar-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: .5;
+        background-color: #000;
+        display: none;
+    }
+
+    .navbar .app-sidebar.open .app-sidebar-backdrop {
+        display: block;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content {
+        position: fixed;
+        top: 0;
+        left: -80%;
+        bottom: 0;
+        overflow-y: auto;
+        width: 80%;
+        background-color: #ffffff;
+        transition: transform .3s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .app-sidebar-content-container {
+        height: 8rem;
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        padding: 0 2.4rem;
+        padding-right: 1.5rem;
+        background: #157FFB;
+        color: #ffffff;
+        justify-content: flex-end;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .app-sidebar-content-container .close-button-container {
+        padding: 0;
+        border-radius: 0.72rem;
+        /* border: #FF6937;
+        background: #FF6937; */
+        background: #157FFB;
+        border: #157FFB;
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .app-sidebar-content-container .close-button-container  i.material-icons {
+        font-size: 4rem;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .title-container {
+        flex: 1 1;
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 2.5;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .menu-container {
+        flex: 1 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2.4rem;
+        padding-top: 2.64rem;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul li {
+        height: 6.12rem;
+
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul li a {
+        text-decoration: none;
+        color: #666666;
+        line-height: 6.12rem;
+        font-size: 2.16rem;
+        font-weight: 400;
+    }
+}
+
+/* 1081 - 1280 */
+@media screen and ( min-width: 1081px ) and ( max-width: 1280px ) {
+    body {
+        min-width: 1280px;
+    }
+
     /* navigation-bar */
     .navbar {
         margin-bottom: 54.6px;
@@ -1542,6 +1734,7 @@ footer .footer-title {
     }
 }
 
+/* 1281 - 1919 */
 @media only screen and ( min-width: 1281px ) and ( max-width: 1919px ) {
     /* navigation-bar */
 
