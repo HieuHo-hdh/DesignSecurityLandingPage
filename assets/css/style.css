@@ -352,6 +352,15 @@ button {
     height: 127.9px;
 }
 
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
+    margin: 0px auto;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 1.45px solid #404040;
+    width: 122.9px;
+    top: 82.55px;
+}
+
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
     font-family: 'Muli Light';
     font-style: normal;
@@ -367,7 +376,8 @@ button {
     display: flex;
     place-content: center;
     align-items: center;
-    height: 107.9px;
+    /* height: 107.9px; */
+    height: 117.9px;
 }
 
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
@@ -428,7 +438,6 @@ button {
 
 .common-title-container .common-title {
     text-align: center;
-    /* padding-bottom: 73px; */
 }
 
 .common-title-container .common-line {
@@ -619,6 +628,11 @@ button {
     width: calc(100% - 288px*2);
     height: 100%;
 }
+
+.solution-section .mobile-solution-background {
+    display: none;
+}
+
 
 .solution-section .solution-content-container {
     transform: translate(0, -520px);
@@ -827,6 +841,10 @@ button {
     height: 912px;
 }
 
+.coding-required-section .mobile-coding-required-background {
+    display: none;
+}
+
 .coding-required-section .coding-required-background {
     position: relative;
     width: 100%;
@@ -891,6 +909,10 @@ button {
     height: 100%;
 }
 
+.ready-to-protect-section .ready-to-protect-background-mobile {
+    display: none;
+}
+
 .ready-to-protect-section .ready-to-protect-container {
     height: 100%;
     display: flex;
@@ -925,7 +947,6 @@ button {
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container {
     text-align: right;
     flex: 1;
-    text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1003,6 +1024,7 @@ footer .footer-title {
 
 /* Smaller than 1080 */
 @media screen and ( max-width: 1080px ) {
+    /* navbar */
     .navbar {
         /* margin-bottom: 0.78125rem; */
         margin-bottom: 3.623rem;
@@ -1020,7 +1042,8 @@ footer .footer-title {
 
     .navbar .navbar-header .navbar-brand img {
         /* height: 0.8rem; */
-        height: 3.71rem;
+        /* height: 3.71rem; */
+        height: 4.8rem;
     }
 
     .navbar .navbar-menu {
@@ -1042,7 +1065,7 @@ footer .footer-title {
     .mobile-navbar .header-contact-container .contact-button-container {
         border: 0;
         border-radius: 0.72rem;
-        padding: 0.75rem 1.68rem;
+        padding: 0.65rem 1.68rem 0.85rem;
         background: #FF6937;
         border: #FF6937 solid 0.18rem;
         cursor: pointer;
@@ -1178,6 +1201,476 @@ footer .footer-title {
         line-height: 6.12rem;
         font-size: 2.16rem;
         font-weight: 400;
+    }
+
+    /* home-section */
+    .home-section {
+        margin-top: 15.7rem;
+        margin-bottom: 2.73rem;
+        min-height: unset;
+    }
+
+    .home-section .dots, .home-section .home-frame {
+        display: none;
+    }
+
+    .home-section .container {
+        display: block;
+        height: unset;
+    }
+
+    .home-section .container .home-content {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .home-section .container .home-content .home-content-container .home-title {
+        font-size: 3.99rem;
+        padding: 0 3.6rem 2.29rem;
+        width: calc(100% - 3.6rem * 2);
+        line-height: 1.19;
+        opacity: 0.7;
+    }
+
+    .home-section .container .home-content .home-content-container .home-description-container {
+        margin-bottom: 0;
+    }
+
+    .home-section .container .home-content .home-content-container .home-description-container .home-description {
+        font-size: 1.69rem;
+        opacity: 1.7;
+        padding: 0 2.6rem 2.6rem;
+        width: calc(100% - 2.6rem * 2);
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer {
+        width: 100%;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-title {
+        font-size: 2.05rem;
+        padding: 0 0 2.347rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container {
+        text-align: left;
+        height: 13.8rem;
+        width: calc(100% - 5.434rem * 2);
+        margin: 0 5.434rem 3.23rem;
+        box-shadow: 0.197rem 0.197rem 1.97rem rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(0.345rem);
+        border-radius: 1.035rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content {
+        height: calc(100% - 1.33rem * 2);
+        padding: 1.33rem 0;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li {
+        width: 8.377rem;
+        padding: 0 0.483rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .value {
+        font-size: 5.9rem;
+        height: 8.67rem;
+        line-height: 1;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
+        top: 1.33rem;
+        height: 8.67rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
+        height: 8.27rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
+        font-size: 1.2rem;
+        padding-top: 0.725rem;
+        line-height: 1.25;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
+        border-bottom: 0.09rem solid #404040;
+        width: 8.377rem;
+        top: 5.59rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-consult-button {
+        font-size: 1.81rem;
+        line-height: 1.27;
+        border-radius: 8.56rem;
+        height: 5.8rem;
+        padding: 1.69rem 4.34rem;
+    }
+
+    .home-section .container .home-image {
+        position: relative;
+        padding: 3.26rem 5.92rem 0;
+        right: 0;
+    }
+
+    .home-section .container .home-image .home-image-container {
+        width: 100%;
+        height: unset;
+    }
+
+    .common-title-container {
+        font-size: 2.78rem;
+        line-height: 1.256;
+    }
+
+    .common-title-container .common-line {
+        border-bottom: 0.29rem solid #000000;
+        width: 8.12rem;
+        margin: 2.42rem auto;
+    }
+
+    /* motivation-section */
+    .motivation-section {
+        margin-bottom: 6.04rem;
+    }
+
+    .motivation-section .motivation-description {
+        padding: 0 2.9rem 1.2rem;
+        font-size: 1.69rem;
+        line-height: 1.7;
+    }
+
+    .motivation-section .applications {
+        margin-bottom: 2.42rem;
+    }
+
+    .motivation-section .applications .applications-title {
+        padding: 0 3.86rem 2.42rem;
+        font-size: 1.69rem;
+        line-height: 1.255;
+    }
+
+    .motivation-section .applications .applications-grid-container {
+        display: block;
+        margin: 0;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item {
+        padding: 2.42rem 5.92rem;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container {
+        width: 100%;
+        border-radius: 2.053rem;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card {
+        box-shadow: 0.34rem 0.34rem 3.4rem rgba(0, 0, 0, 0.2);
+        padding: 5.68rem 0;
+        border-radius: 2.053rem;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .image-container {
+        height: 10.45rem;
+        /* height: 9.28rem; */
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .image-container .image {
+        width: 15.92rem;
+        height: 9.28rem;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container {
+        height: 7.192rem;
+        padding: 0 6.7rem;
+    }
+
+    .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
+        font-size: 2.05rem;
+        line-height: 1.24;
+    }
+
+    .motivation-section .motivation-more-button button {
+        border: 0.24rem solid #157FFB;
+        border-radius: 8.56rem;
+        height: 5.8rem;
+        width: 19.32rem;
+        font-size: 1.811rem;
+        line-height: 1.267;
+    }
+
+    /* solution-section */
+    .solution-section {
+        height: 40.82rem;
+        margin-bottom: 6.04rem;
+    }
+
+    .solution-section .solution-left-frame, .solution-section .solution-right-frame {
+        display: none;
+    }
+
+    .solution-section .common-line {
+        border-color: #ffffff;
+    }
+    
+    .solution-section .solution-background {
+        display: none;
+    }
+
+    .solution-section .mobile-solution-background {
+        display: block;
+        padding: 0 1.33rem;
+        width: calc(100% - 1.33rem * 2); 
+        height: 40.82rem;
+    }
+
+    .solution-section .solution-content-container {
+        transform: translate(0, -37.56rem);
+        padding: 0;
+    }
+
+    .solution-section .solution-content-container .solution-description {
+        line-height: 1.7;
+        font-size: 1.69rem;
+        padding: 0 3.8rem;
+    }
+
+    /* approach-section */
+    .approach-section {
+        margin-bottom: 3.623rem;
+    }
+
+    .approach-section .approach-frame {
+        padding-top: 17.05rem;
+        transform: translate(2.98rem, 0);
+    }
+
+    .approach-section .approach-description {
+        font-size: 1.69rem;
+        line-height: 1.7;
+        padding: 0 2.9rem 2.42rem;
+    }
+
+    .approach-section .approaches-container {
+        padding: 0 6.76rem;
+        display: block;
+    }
+
+    .approach-section .approaches-container .approach-item {
+        padding: 2.42rem 0;
+    }
+
+    .approach-section .approaches-container .approach-item .card {
+        box-shadow: 0.35rem 0.35rem 3.5rem rgba(0, 0, 0, 0.2);
+        border-radius: 2.143rem;
+        padding-top: 4.83rem;
+        height: 56.88rem;
+    }
+
+    .approach-section .approaches-container .approach-item .card .image-container {
+        margin-bottom: 4.02rem;
+    }
+
+    .approach-section .approaches-container .approach-item .card .image-container .image {
+        height: 10.14rem;
+        width: 10.14rem;
+    }
+
+    .approach-section .approaches-container .approach-item .card .title {
+        font-size: 2.053rem;
+        line-height: 1.59;
+        padding-bottom: 3.164rem;
+    }
+
+    .approach-section .approaches-container .approach-item .card .details .detail-item {
+        padding-bottom: 1.16rem;
+    }
+
+    .approach-section .approaches-container .approach-item .card .details .detail-item .mark {
+        padding-right: 1.81rem;
+    }
+
+    .approach-section .approaches-container .approach-item .card .details .detail-item .content {
+        font-size: 1.93rem;
+        line-height: 1.6875;
+    }
+
+    /* benefits-section */
+    .benefit-section {
+        margin-bottom: 4.83rem;
+    }
+
+    .benefit-section .benefits-container {
+        display: block;
+        padding: 0 6.76rem;
+    }
+
+    .benefit-section .benefits-container .benefit-item {
+        padding: 2.42rem 0;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card {
+        box-shadow: 0.345rem 0.345rem 3.45rem rgba(0, 0, 0, 0.2);
+        border-radius: 2.077rem;
+        padding-top: 7.79rem;
+        /* height: 55.92rem; */
+        height: 48.13rem;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .image-container {
+        margin-bottom: 4.05rem;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .image-container .image {
+        height: 9.8rem;
+        width: 9.8rem;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .title {
+        font-size: 2.05rem;
+        line-height: 1.65;
+        padding: 0 5.314rem 1.33rem;
+        min-height: 6.76rem;
+    }
+
+    .benefit-section .benefits-container .benefit-item .card .description {
+        font-size: 1.932rem;
+        line-height: 1.7;
+        padding: 0 4.22rem;
+    }
+
+    /* coding-required-section */
+    .coding-required-section {
+        width: 100%;
+        height: 35.39rem;
+        margin-bottom: 4.83rem;
+    }
+
+    .coding-required-section .coding-required-background {
+        display: none;
+    }
+
+    .coding-required-section .mobile-coding-required-background {
+        display: block;
+        padding: 0 1.33rem;
+        width: calc(100% - 1.33rem * 2); 
+        height: 35.39rem;
+    }
+
+    .coding-required-section .coding-required-content-container {
+        padding: 0;
+        width: 100%;
+        /* transform: translate(0, calc(100vw * -912/1920 - 10px)); */
+        transform: translate(0, calc(-32.13rem));
+    }
+
+    .coding-required-content-container .coding-required-description {
+        font-size: 1.69rem;
+        line-height: 1.7;
+        padding: 0 4.22rem;
+    }
+
+    .coding-required-content-container .coding-required-description .mobile-spacing-remove {
+        display: none;
+    }
+
+    /* ready-to-protect-section */
+
+    .ready-to-protect-section {
+        height: 38.16rem;
+        margin-bottom: 3.62rem;
+    }
+
+    .ready-to-protect-section .ready-to-protect-background {
+        display: none;
+    }
+
+    .ready-to-protect-section .ready-to-protect-background-mobile {
+        display: block;
+        padding: 0 1.33rem;
+        width: calc(100% - 1.33rem * 2); 
+        height: 38.16rem;
+    }
+    
+
+    .ready-to-protect-section .ready-to-protect-container {
+        display: block;
+        transform: translate(0, -38.16rem);
+        padding: 0;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
+        text-align: center; 
+        font-size: 2.78rem;
+        line-height: 1;
+        padding: 5.07rem 10.2rem 1.33rem;
+        width: calc(100% - 10.2rem * 2);
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-description {
+        text-align: center;
+        font-size: 1.93rem;
+        line-height: 1.875;
+        padding-bottom: 4.1rem;
+        /* padding: 5.07rem 10.2rem 0;
+        width: calc(100% - 10.2rem * 2); */
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container {
+        align-items: center;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
+        margin-bottom: 1.811rem;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button {
+        width: 21.38rem;
+        height: 5.8rem;
+        border-radius: 8.57rem;
+        padding: 0 4.49rem;
+        font-size: 1.811rem;
+        line-height: 1.26;
+    }
+
+    /* footer */
+    footer {
+        height: 15.7rem;
+    }
+
+    footer .footer-icon-container {
+        position: relative;
+        left: 0;
+    }
+
+    footer .footer-icon-container .footer-icon-items-container {
+        height: 8.736rem;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    footer .footer-icon-container .footer-icon-items-container .footer-icon-item {
+        padding: 3.14rem 2.11rem 0;
+        height: 3.22rem;
+        width: 3.22rem;
+    }
+
+    footer .footer-icon-container .footer-icon-items-container .footer-icon-item .icon {
+        height: 100%;
+        width: 100%;
+    }
+
+    footer .footer-title {
+        display: block;
+        font-size: 1.81rem;
+        line-height: 2.13;
+        text-align: center;
     }
 }
 
@@ -1343,6 +1836,12 @@ footer .footer-title {
         font-size: 58px;
         height: 85.26px;
     }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
+        border-bottom: 0.967px solid #404040;
+        width: 75.267px;
+        top: 55.03px;
+    }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
         font-size: 10px;
@@ -1350,7 +1849,8 @@ footer .footer-title {
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
-        height: 71.93px;
+        /* height: 71.93px; */
+        height: 78.6px;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
@@ -1899,9 +2399,16 @@ footer .footer-title {
         font-size: 0.39rem;
         padding-top: 0.29rem;
     }
+
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
+        border-bottom: 0.038rem solid #404040;
+        width: 3.2rem;
+        top: 2.15rem;
+    }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
-        height: 2.8rem;
+        /* height: 2.8rem; */
+        height: 3.07rem;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
