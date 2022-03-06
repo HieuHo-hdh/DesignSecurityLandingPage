@@ -19,6 +19,13 @@
     src: url('../fonts/Muli-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Bebas Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Bebas-Regular.ttf');
+}
+
 html {
     font-size: 2vw;
     /* 1px = 50/1920 rem */
@@ -56,6 +63,7 @@ button {
 {
     background: #157FFB;
     border: none;
+    max-width: 1920px;
     /* height: 111px; */
     height: 100px;
     /* margin-bottom: 82px; */
@@ -177,14 +185,74 @@ button {
 
 /* home-section */
 .home-section {
-    margin-top: 182px;
+    margin-top: 170px;
     margin-bottom: 63.34px;
+    min-height: calc(100vh - 180px - 63.34px);
 }
 
 .home-section .dots {
     display: block;
     position: absolute;
     padding-top: 15px;
+    width: 157.9px;
+    height: 138px;
+}
+
+.home-section .home-frame {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.home-section .home-frame img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-section .home-frame-1 {
+    width: 55px;
+    height: 55px;
+    top: 140.7px;
+    padding-left: 130px;
+}
+
+.home-section .home-frame-2 {
+    /* width: 55px;
+    height: 55px; 
+    top: 552px;
+    */
+    width: 115px;
+    height: 115px;
+    top: 522px;
+    padding-left: 150px;
+}
+
+.home-section .home-frame-3 {
+    width: 140px;
+    height: 140px;
+    top: 711px;
+    padding-left: 102px;
+}
+
+.home-section .home-frame-4 {
+    width: 115px;
+    height: 115px;
+    top: 227px;
+    padding-left: 812px;
+}
+
+.home-section .home-frame-5 {
+    width: 115px;
+    height: 115px;
+    top: 448px;
+    padding-left: 906px;
+}
+
+.home-section .home-frame-6 {
+    width: 115px;
+    height: 115px;
+    top: 820px;
+    padding-left: 940px;
 }
 
 .home-section .container {
@@ -193,8 +261,7 @@ button {
 }
 
 .home-section .container .home-content {
-    padding-top: 48px;
-    padding-left: 228px;    
+    padding-left: 268px;    
     z-index: 1;
 }
 
@@ -204,37 +271,108 @@ button {
     font-weight: 700;
     line-height: 1.24;
     font-size: 50px;
-    /* font-size: 54px; */
-    padding-bottom: 35.8px;
-    width: 715px;
+    padding-bottom: 20px;
+    width: 602px;
 }
 
 .home-section .container .home-content .home-content-container .home-description-container {
     line-height: 1.52;
     font-weight: 300;
-    font-size: 25px;
-    margin-bottom: 42px;
+    font-size: 22px;
+    margin-bottom: 31px;
 }
 
 .home-section .container .home-content .home-content-container .home-description-container .home-description {
     font-family: 'Muli Light';
     color: #7D7987;
-    width: 634.8px;
-    max-height: 190px;
-    -webkit-line-clamp: 5;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    width: 606px;
 }
 
-.home-section .container .home-content .home-content-container .home-description-container .more-description {
-    color: #157FFB;
-    text-decoration: underline;
+.home-section .container .home-content .home-content-container .home-timer {
+    width: 577px;
 }
 
-.home-section .container .home-content .home-content-container .home-description-container .more-description:hover {
-    cursor: pointer;
+.home-section .container .home-content .home-content-container .home-timer .timer-title {
+    text-align: center;
+    font-family: 'Muli Bold';
+    font-weight: bold;
+    line-height: 1.27;
+    color: #000000;
+    opacity: 0.7;
+    font-size: 22px;
+    padding-bottom: 33px;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    margin-bottom: 58.5px;
+    height: 203.48px;
+    width: 100%;
+    box-shadow: 2.9px 2.9px 29px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.1px);
+    border-radius: 15.26px;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content {
+    place-content: center;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 22px * 2);
+    padding: 22px 0;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li {
+    float: left;
+    display: block;
+    padding: 0 7.5px;
+    width: 123.5px;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .value {
+    color: #ffffff;
+    font-family: 'Bebas Regular';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.02;
+    font-size: 87px;
+    height: 127.9px;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
+    font-family: 'Muli Light';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.26;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 11.3px
+}
+
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 107.9px;
+}
+
+.home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
+    position: absolute;
+    top: 20px;
+    height: 127.9px;
+    z-index: -1;
+}
+
+.home-section .container .home-content .home-content-container .home-consult-button-container {
+    width: 100%;
+    display: flex;
+    place-content: center;
 }
 
 .home-section .container .home-content .home-content-container .home-consult-button {
@@ -258,14 +396,16 @@ button {
 
 .home-section .container .home-image {
     position: absolute;
-    right: 0;
+    padding-top: 8px;
+    right: 111.3px;
 }
 
-.home-section .container .home-image-container {
-    width: 1222px;
+.home-section .container .home-image .home-image-container {
+    width: 639px;
+    height: 891px;
 }
 
-.home-section .container .home-image-container img{
+.home-section .container .home-image .home-image-container img {
     height: auto;
     width: 100%;
 }
@@ -904,12 +1044,57 @@ footer .footer-title {
 
     /* home-section */
     .home-section {
-        margin-top: 121.3px;
         margin-bottom: 42.23px;
+        margin-top: 113.3px;
+        min-height: calc(100vh - 113.3px - 42.23px);
     }
 
     .home-section .dots {
         padding-top: 10px;
+        width: 105.26px;
+        height: 92px;
+    }
+
+    .home-section .home-frame-1 {
+        width: 36.6px;
+        height: 36.6px;
+        top: 93.8px;
+        padding-left: 86.6px;
+    }
+    
+    .home-section .home-frame-2 {
+        width: 76.6px;
+        height: 76.6px;
+        top: 348px;
+        padding-left: 100px;
+    }
+    
+    .home-section .home-frame-3 {
+        width: 93.3px;
+        height: 93.3px;
+        top: 474px;
+        padding-left: 68px;
+    }
+    
+    .home-section .home-frame-4 {
+        width: 76.6px;
+        height: 76.6px;
+        top: 151.3px;
+        padding-left: 541.3px;
+    }
+    
+    .home-section .home-frame-5 {
+        width: 76.6px;
+        height: 76.6px;
+        top: 298.6px;
+        padding-left: 604px;
+    }
+    
+    .home-section .home-frame-6 {
+        width: 76.6px;
+        height: 76.6px;
+        top: 546.6px;
+        padding-left: 626.6px;
     }
 
     .home-section .container {
@@ -917,25 +1102,68 @@ footer .footer-title {
     }
 
     .home-section .container .home-content {
-        padding-top: 32px;
-        padding-left: 152px;    
+        padding-left: 178.7px;    
     }
 
     .home-section .container .home-content .home-content-container .home-title {
-        /* font-size: 36px; */
         font-size: 33.3px;
-        padding-bottom: 23.87px;
-        width: 476.6px;
+        padding-bottom: 13.3px;
+        width: 401.3px;
     }
 
     .home-section .container .home-content .home-content-container .home-description-container {
-        margin-bottom: 28px;
-        font-size: 16.6px;
+        font-size: 14.67px;
+        margin-bottom: 20.67;
     }
 
     .home-section .container .home-content .home-content-container .home-description-container .home-description {
-        width: 423.2px;
-        max-height: 126.6px;
+        width: 404px;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer {
+        width: 384.67px;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-title {
+        font-size: 14.6px;
+        padding-bottom: 22px;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container {
+        margin-bottom: 39px;
+        height: 135.65px;
+        box-shadow: 1.93px 1.93px 19.3px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(3.4px);
+        border-radius: 10.17px;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content {
+        height: calc(100% - 14.6px * 2);
+        padding: 14.6px 0;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li {
+        padding: 0 5px;
+        width: 82.3px;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .value {
+        font-size: 58px;
+        height: 85.26px;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
+        font-size: 10px;
+        padding-top: 7.53px
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
+        height: 71.93px;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
+        top: 13.3px;
+        height: 85.26px;
     }
 
     .home-section .container .home-content .home-content-container .home-consult-button {
@@ -945,8 +1173,14 @@ footer .footer-title {
         padding: 0 36px 3.33px;
     }
 
-    .home-section .container .home-image-container {
-        width: 814.6px;
+    .home-section .container .home-image {
+        padding-top: 5.33px;
+        right: 74.2px;
+    }
+
+    .home-section .container .home-image .home-image-container {
+        width: 426px;
+        height: 594px;
     }
 
     /* common title */
@@ -1360,12 +1594,57 @@ footer .footer-title {
     /* home-section */
     
     .home-section {
-        margin-top: 4.74rem;
         margin-bottom: 1.65rem;
+        margin-top: 4.427rem;
+        min-height: calc(100vh - 4.427rem -  1.65rem);
     }
 
     .home-section .dots {
         padding-top: 0.39rem;
+        width: 4.11rem;
+        height: 3.59rem;
+    }
+
+    .home-section .home-frame-1 {
+        width: 1.432rem;
+        height: 1.432rem;
+        top: 3.66rem;
+        padding-left: 3.39rem;
+    }
+    
+    .home-section .home-frame-2 {
+        width: 2.99rem;
+        height: 2.99rem;
+        top: 13.6rem;
+        padding-left: 3.9rem;
+    }
+    
+    .home-section .home-frame-3 {
+        width: 3.64rem;
+        height: 3.64rem;
+        top: 18.51rem;
+        padding-left: 2.66rem;
+    }
+    
+    .home-section .home-frame-4 {
+        width: 2.99rem;
+        height: 2.99rem;
+        top: 5.911rem;
+        padding-left: 21.14rem;
+    }
+    
+    .home-section .home-frame-5 {
+        width: 2.99rem;
+        height: 2.99rem;
+        top: 11.67rem;
+        padding-left: 23.6rem;
+    }
+    
+    .home-section .home-frame-6 {
+        width: 2.99rem;
+        height: 2.99rem;
+        top: 21.35rem;
+        padding-left: 24.479rem;
     }
 
     .home-section .container {
@@ -1373,25 +1652,68 @@ footer .footer-title {
     }
 
     .home-section .container .home-content {
-        padding-top: 1.25rem;
-        padding-left: 5.9375rem;    
+        padding-left: 6.98rem;    
     }
 
     .home-section .container .home-content .home-content-container .home-title {
-        /* font-size: 1.40625rem; */
         font-size: 1.3rem;
-        padding-bottom: 0.932rem;
-        width: 18.62rem;
+        padding-bottom: 0.52rem;
+        width: 15.68rem;
     }
 
     .home-section .container .home-content .home-content-container .home-description-container {
-        font-size: 0.65rem;
-        margin-bottom: 1.09375;
+        font-size: 0.57rem;
+        margin-bottom: 0.8rem;
     }
 
     .home-section .container .home-content .home-content-container .home-description-container .home-description {
-        width: 16.53rem;
-        max-height: 4.95rem;
+        width: 15.78rem;
+    }
+
+    .home-section .container .home-content .home-content-container .home-timer {
+        width: 15.026rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-title {
+        font-size: 0.57rem;
+        padding-bottom: 0.86rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container {
+        margin-bottom: 1.523rem;
+        height: 5.29rem;
+        box-shadow: 0.076rem 0.076rem 0.76rem rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(0.13rem);
+        border-radius: 0.4rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content {
+        height: calc(100% - 0.57rem * 2);
+        padding: 0.57rem 0;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li {
+        padding: 0 0.196rem;
+        width: 3.216rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .value {
+        font-size: 2.27rem;
+        height: 3.33rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
+        font-size: 0.39rem;
+        padding-top: 0.29rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
+        height: 2.8rem;
+    }
+    
+    .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
+        top: 0.52rem;
+        height: 3.33rem;
     }
 
     .home-section .container .home-content .home-content-container .home-consult-button {
@@ -1401,8 +1723,14 @@ footer .footer-title {
         padding: 0 1.40625rem 0.13rem;
     }
 
-    .home-section .container .home-image-container {
-        width: 31.82rem;
+    .home-section .container .home-image {
+        padding-top: 0.2rem;
+        right: 2.9rem;
+    }
+
+    .home-section .container .home-image .home-image-container {
+        width: 16.64rem;
+        height: 23.2rem;
     }
 
     /* common title */
