@@ -1335,6 +1335,20 @@ footer .footer-title {
         margin-bottom: 6.04rem;
     }
 
+    .motivation-section .motivation-left-frame {
+        width: 72.46rem;
+        height: 93.86rem;
+        left: -34rem;
+        padding-top: 50rem;
+    }
+
+    .motivation-section .motivation-right-frame {
+        width: 12.55rem;
+        height: 10.97rem;
+        padding-right: 4rem;
+        padding-top: 135rem;
+    }
+
     .motivation-section .motivation-description {
         padding: 0 2.9rem 1.2rem;
         font-size: 1.69rem;
@@ -1406,8 +1420,19 @@ footer .footer-title {
         margin-bottom: 6.04rem;
     }
 
-    .solution-section .solution-left-frame, .solution-section .solution-right-frame {
+    .solution-section .solution-left-frame {
         display: none;
+    }
+
+    .solution-section .solution-right-frame {
+        width: 8.01rem;
+        height: 7rem;
+        padding-top: 1rem;
+        padding-right: 0.5rem;
+    }
+    .solution-section .solution-right-frame img {
+        height: 100%;
+        width: 100%;
     }
 
     .solution-section .common-line {
@@ -1443,7 +1468,12 @@ footer .footer-title {
 
     .approach-section .approach-frame {
         padding-top: 17.05rem;
-        transform: translate(2.98rem, 0);
+        transform: translate(2.18rem, 0);
+    }
+
+    .approach-section .approach-frame img {
+        height: 8.45rem;
+        width: 9.66rem;
     }
 
     .approach-section .approach-description {
@@ -1498,7 +1528,21 @@ footer .footer-title {
 
     /* benefits-section */
     .benefit-section {
-        margin-bottom: 4.83rem;
+        margin-bottom: 2.42rem;
+    }
+
+    .benefit-section .benefit-left-frame {
+        display: none;
+    }
+
+    .benefit-section .benefit-right-frame {
+        padding-right: 0;
+        transform: translate(40rem, 30rem);
+    }
+
+    .benefit-section .benefit-right-frame img {
+        width: 60.4rem;
+        height: 43.16;
     }
 
     .benefit-section .benefits-container {
