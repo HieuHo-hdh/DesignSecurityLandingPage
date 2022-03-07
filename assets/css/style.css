@@ -157,7 +157,7 @@ button {
 
 .navbar .navbar-menu ul li:not(:last-child) a:hover, 
 .navbar .navbar-menu ul li:not(:last-child) a:focus {
-    border: #FFFFFF;
+    border: 0px;
     background: #FFFFFF;
     color: #157FFB;
     font-weight: 700;
@@ -171,7 +171,7 @@ button {
 
 .navbar .navbar-menu ul li .contact-button-container .contact-button {
     background-color: #FF6937;
-    border: #FF6937;
+    border: 0px;
     color: #FFFFFF;
     font-weight: 700;
     line-height: 1.27;
@@ -198,6 +198,7 @@ button {
     padding-top: 15px;
     width: 126.32px;
     height: 110.4px;
+    transform: translateX(-20px);
 }
 
 .home-section .dots img {
@@ -907,8 +908,10 @@ button {
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
-    padding-top: 93px;
     width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
@@ -942,7 +945,6 @@ button {
 
     border-radius: 100px;
     padding: 0 41px;
-    font-weight: 700;
     font-size: 21px;
     line-height: 1.19;
     color: #ffffff;
@@ -1773,6 +1775,7 @@ footer .footer-title {
         padding-top: 10px;
         width: 84.21px;
         height: 73.6px;
+        transform: translateX(-13.3px);
     }
 
     .home-section .home-frame-1 {
@@ -2218,7 +2221,6 @@ footer .footer-title {
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
-        padding-top: 62px;
         width: 280px;
     }
 
@@ -2294,8 +2296,8 @@ footer .footer-title {
 
     .navbar .navbar-menu ul li:not(:last-child)
     {
-        padding: 0.657rem 0.39rem;
-        height: calc(100% - 1.314rem);
+        padding: 0.599rem 0.39rem;
+        height: calc(100% - 1.198rem);
     }
 
     .navbar .navbar-menu ul li a{
@@ -2332,6 +2334,7 @@ footer .footer-title {
         padding-top: 0.39rem;
         width: 3.288rem;
         height: 2.87rem;
+        transform: translateX(-0.52rem);
     }
 
     .home-section .home-frame-1 {
@@ -2785,8 +2788,7 @@ footer .footer-title {
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
-        padding-top: 2.42rem;
-        width: 10.9375srem;
+        width: 10.9375rem;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
