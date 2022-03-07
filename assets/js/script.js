@@ -75,3 +75,11 @@ function hideNavBarMobile() {
     )
     appSidebar.className="app-sidebar";
 }
+
+//On Click => show & hide menu - mobile
+function setActiveNavigation(event) {
+    var menuItem = document.getElementsByClassName("menu-item active");
+    if (menuItem.length > 0)
+    menuItem[0].className="menu-item"
+    event.className="menu-item active";
+}

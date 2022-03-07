@@ -1165,7 +1165,7 @@ footer .footer-title {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        padding: 0 2.4rem;
+        padding: 0;
         padding-top: 2.64rem;
     }
 
@@ -1178,17 +1178,23 @@ footer .footer-title {
         padding: 0;
     }
 
-    .navbar .app-sidebar .app-sidebar-content .menu-container ul li {
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul .menu-item {
         height: 6.12rem;
-
+        padding: 0 2.4rem;
     }
 
-    .navbar .app-sidebar .app-sidebar-content .menu-container ul li a {
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul .menu-item {
         text-decoration: none;
         color: #666666;
         line-height: 6.12rem;
         font-size: 2.16rem;
         font-weight: 400;
+    }
+
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul .menu-item.active {
+        background: #157FFB;
+        color: #ffffff;
+        font-family: 'Muli Bold';
     }
 
     /* home-section */
