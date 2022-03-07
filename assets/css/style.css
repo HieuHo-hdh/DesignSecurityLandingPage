@@ -266,7 +266,6 @@ button {
 .home-section .container .home-content .home-content-container .home-title {
     font-family: 'Muli Bold';
     color: #000000;
-    font-weight: 700;
     line-height: 1.24;
     font-size: 50px;
     padding-bottom: 20px;
@@ -293,7 +292,6 @@ button {
 .home-section .container .home-content .home-content-container .home-timer .timer-title {
     text-align: center;
     font-family: 'Muli Bold';
-    font-weight: bold;
     line-height: 1.27;
     color: #000000;
     opacity: 0.7;
@@ -391,7 +389,6 @@ button {
     background: #157FFB;
     border: #157FFB;
     color: #FFFFFF;
-    font-weight: 700;
     line-height: 1.255;
     font-size: 22px;
     border-radius: 100px;
@@ -424,7 +421,6 @@ button {
 /* common title */
 .common-title-container {
     font-family: 'Muli Bold';
-    font-weight: 700;
     font-size: 43px;
     line-height: 1.56;
 }
@@ -496,7 +492,6 @@ button {
 
 .motivation-section .applications .applications-title {
     font-family: 'Muli Bold';
-    font-weight: 700;
     line-height: 1.63;
     color: #7D7987;
     text-align: center;
@@ -551,7 +546,6 @@ button {
 
 .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
     font-family: 'Muli Bold';
-    font-weight: 700;
     font-size: 24px;
     line-height: 1.255;
     text-align: center;
@@ -712,7 +706,6 @@ button {
 .approach-section .approaches-container .approach-item .card .title {
     font-family: 'Muli Bold';
     line-height: 1.54;
-    font-weight: 700;
     text-align: center;
     font-size: 24px;
     padding-bottom: 35.41px;
@@ -807,7 +800,6 @@ button {
 
 .benefit-section .benefits-container .benefit-item .card .title {
     font-family: 'Muli Bold';
-    font-weight: 700;
     text-align: center;
     line-height: 1.6;
     font-size: 24px;
@@ -916,7 +908,6 @@ button {
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
     font-family: 'Muli Bold';
-    font-weight: 700;
     color: #ffffff;
     font-size: 43px;
     line-height: 1.047;
