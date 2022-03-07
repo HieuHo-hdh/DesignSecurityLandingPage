@@ -196,8 +196,13 @@ button {
     display: block;
     position: absolute;
     padding-top: 15px;
-    width: 157.9px;
-    height: 138px;
+    width: 126.32px;
+    height: 110.4px;
+}
+
+.home-section .dots img {
+    width: 100%;
+    height: 100%;
 }
 
 .home-section .home-frame {
@@ -259,7 +264,7 @@ button {
 }
 
 .home-section .container .home-content {
-    padding-left: 268px;    
+    padding-left: 268px;
     z-index: 1;
 }
 
@@ -1766,8 +1771,8 @@ footer .footer-title {
 
     .home-section .dots {
         padding-top: 10px;
-        width: 105.26px;
-        height: 92px;
+        width: 84.21px;
+        height: 73.6px;
     }
 
     .home-section .home-frame-1 {
@@ -2325,8 +2330,8 @@ footer .footer-title {
 
     .home-section .dots {
         padding-top: 0.39rem;
-        width: 4.11rem;
-        height: 3.59rem;
+        width: 3.288rem;
+        height: 2.87rem;
     }
 
     .home-section .home-frame-1 {
