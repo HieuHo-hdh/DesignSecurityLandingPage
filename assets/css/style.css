@@ -944,6 +944,15 @@ button {
     color: #ffffff;
 }
 
+.ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
+    border: 1px solid #ffffff;
+}
+
+.ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
     background: #157FFB;
     border: #157FFB;
@@ -1651,6 +1660,10 @@ footer .footer-title {
         line-height: 1.26;
     }
 
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
+        border: 0px;
+    }
+
     /* footer */
     footer {
         height: 15.7rem;
@@ -2215,6 +2228,10 @@ footer .footer-title {
         font-size: 14px;
     }
 
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
+        border: 0.66px solid #ffffff;
+    }
+
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
         margin-bottom: 10.33px;
     }
@@ -2775,6 +2792,10 @@ footer .footer-title {
         border-radius: 2.6rem;
         padding: 0 1.06rem;
         font-size: 0.547rem;
+    }
+
+    .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
+        border: 0.02rem solid #ffffff;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
