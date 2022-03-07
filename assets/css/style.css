@@ -382,12 +382,14 @@ button {
     /* height: 117.9px; */
     /* height: 124.9px; */
     height: 121.9px;
+    z-index: 2;
+    position: relative;
 }
 
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
     top: -127.9px;
     height: 127.9px;
-    z-index: -1;
+    z-index: 1;
     position: relative;
 }
 
@@ -1243,7 +1245,7 @@ footer .footer-title {
 
     .home-section .container .home-content .home-content-container .home-description-container .home-description {
         font-size: 1.69rem;
-        opacity: 1.7;
+        line-height: 1.7;
         padding: 0 2.6rem 2.6rem;
         width: calc(100% - 2.6rem * 2);
     }
