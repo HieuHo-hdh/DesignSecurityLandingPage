@@ -17,52 +17,20 @@ function showHiddenMotivationCard() {
     buttonMore.style.display = "none";
 }
 
-// OnClick => Route to another page
-document.getElementById("consult-now").onclick = function () {
-    location.href = "https://www.google.com";
-};
-document.getElementById("contact-us").onclick = function () {
-    location.href = "https://www.google.com";
-};
-document.getElementById("mobile-contact-us").onclick = function () {
-    location.href = "https://www.google.com";
-};
-
-// Ready to protect your application
-document.getElementById("request-demo").onclick = function () {
-    location.href = "https://www.google.com";
-};
-document.getElementById("contact-us-ready").onclick = function () {
-    location.href = "https://www.google.com";
-};
-// Footer icons
-document.getElementById("footer-facebook").onclick = function () {
-    location.href = "https://www.facebook.com";
-};
-document.getElementById("footer-twitter").onclick = function () {
-    location.href = "https://www.twitter.com";
-};
-document.getElementById("footer-instagram").onclick = function () {
-    location.href = "https://www.instagram.com";
-};
-document.getElementById("footer-linkedin").onclick = function () {
-    location.href = "https://www.linkedin.com";
-};
-
 //Show time in banner
 (function () {
     const second = 1000,
           minute = second * 60,
           hour = minute * 60,
           day = hour * 24;
-    let fixeddays = 7,
-        fixedhours = 3,
-        fixedminutes = 4,
-        fixedsecs = 9;
-    let countDown = fixeddays *day + fixedhours *hour + fixedminutes *minute + fixedsecs;
+    //***: Set time here
+    let fixeddays = 07,
+        fixedhours = 03,
+        fixedminutes = 04,
+        fixedsecs = 09;
+    let countDown = fixeddays *day + fixedhours *hour + fixedminutes *minute + (fixedsecs+1)*second;
     x = setInterval(
         function() {
-            countDown = countDown - 4;
             let timeRemaining = countDown;
             if (Math.floor(timeRemaining / (day)) < 10) 
                 document.getElementById("days").innerText = '0' + Math.floor(timeRemaining / (day));
@@ -79,6 +47,7 @@ document.getElementById("footer-linkedin").onclick = function () {
             if (Math.floor((timeRemaining % (minute)) / second) < 10) 
                 document.getElementById("seconds").innerText = '0' + Math.floor((timeRemaining % (minute)) / second);
             else document.getElementById("seconds").innerText = Math.floor((timeRemaining % (minute)) / second);
+            countDown = countDown - 4;
         }, 0)
     }()
 );
