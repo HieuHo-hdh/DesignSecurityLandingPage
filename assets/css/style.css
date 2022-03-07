@@ -520,6 +520,7 @@ button {
 .motivation-section .applications .applications-grid-container .grid-item .card-container {
     background: #FFFFFF;
     width: 420px;
+    border-radius: 24px;
 }
 
 .motivation-section .applications .applications-grid-container .grid-item .card-container .card {
@@ -909,7 +910,7 @@ button {
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
     padding-top: 93px;
-    width: 380px;
+    width: 420px;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
@@ -1967,6 +1968,7 @@ footer .footer-title {
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container {
         width: 280px;
+        border-radius: 16px;
     }
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card {
@@ -2214,7 +2216,7 @@ footer .footer-title {
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
         padding-top: 62px;
-        width: 253.3px;
+        width: 280px;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
@@ -2526,6 +2528,7 @@ footer .footer-title {
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container {
         width: 10.9375rem;
+        border-radius: 0.625rem;
     }
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card {
@@ -2780,7 +2783,7 @@ footer .footer-title {
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
         padding-top: 2.42rem;
-        width: 9.9rem;
+        width: 10.9375srem;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
