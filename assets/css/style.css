@@ -1895,7 +1895,8 @@ footer .footer-title {
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
         border-bottom: 0.967px solid #404040;
-        width: 75.267px;
+        /* width: 75.267px; */
+        width: 82.3px;
         /* top: 55.03px; */
         top: -134.97px;
     }
