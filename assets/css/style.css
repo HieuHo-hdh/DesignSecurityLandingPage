@@ -17,6 +17,7 @@
 
 @font-face {
     font-family: 'Muli Bold';
+    font-weight: 300;
     src: url('../fonts/Muli-Bold.ttf') format('truetype');
 }
 
