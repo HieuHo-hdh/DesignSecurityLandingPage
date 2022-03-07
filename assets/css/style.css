@@ -340,6 +340,7 @@ button {
     display: block;
     padding: 0 7.5px;
     width: 123.5px;
+    height: 127.9px;
 }
 
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .value {
@@ -354,11 +355,11 @@ button {
 
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
     margin: 0px auto;
-    position: absolute;
+    position: relative;
     z-index: 3;
     border-bottom: 1.45px solid #404040;
     width: 122.9px;
-    top: 82.55px;
+    top: -202.45px;
 }
 
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
@@ -368,7 +369,8 @@ button {
     line-height: 1.26;
     text-align: center;
     font-size: 15px;
-    padding-top: 11.3px
+    position: relative;
+    top: -127.7px;
 }
 
 
@@ -377,14 +379,16 @@ button {
     place-content: center;
     align-items: center;
     /* height: 107.9px; */
-    height: 117.9px;
+    /* height: 117.9px; */
+    /* height: 124.9px; */
+    height: 121.9px;
 }
 
 .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
-    position: absolute;
-    top: 20px;
+    top: -127.9px;
     height: 127.9px;
     z-index: -1;
+    position: relative;
 }
 
 .home-section .container .home-content .home-content-container .home-consult-button-container {
@@ -1256,11 +1260,13 @@ footer .footer-title {
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container {
         text-align: left;
         height: 13.8rem;
-        width: calc(100% - 5.434rem * 2);
-        margin: 0 5.434rem 3.23rem;
+        /* width: calc(100% - 5.434rem * 2);
+        margin: 0 5.434rem 3.23rem; */
         box-shadow: 0.197rem 0.197rem 1.97rem rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(0.345rem);
         border-radius: 1.035rem;
+        width: calc(100% - 4.589rem * 2);
+        margin: 0 4.589rem 3.23rem;
     }
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content {
@@ -1271,6 +1277,7 @@ footer .footer-title {
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li {
         width: 8.377rem;
         padding: 0 0.483rem;
+        height: 13.8rem;
     }
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .value {
@@ -1280,8 +1287,9 @@ footer .footer-title {
     }
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
-        top: 1.33rem;
+        /* top: 1.33rem; */
         height: 8.67rem;
+        top: -8.67rem;
     }
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
@@ -1290,14 +1298,16 @@ footer .footer-title {
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
         font-size: 1.2rem;
-        padding-top: 0.725rem;
+        /* padding-top: 0.725rem; */
         line-height: 1.25;
+        top: -8.326rem;
     }
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
         border-bottom: 0.09rem solid #404040;
         width: 8.377rem;
-        top: 5.59rem;
+        /* top: 5.59rem; */
+        top: -13.35rem;
     }
 
     .home-section .container .home-content .home-content-container .home-consult-button {
@@ -1884,22 +1894,27 @@ footer .footer-title {
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
         border-bottom: 0.967px solid #404040;
         width: 75.267px;
-        top: 55.03px;
+        /* top: 55.03px; */
+        top: -134.97px;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
         font-size: 10px;
-        padding-top: 7.53px
+        /* padding-top: 7.53px */
+        top: -85.13px;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
         /* height: 71.93px; */
-        height: 78.6px;
+        /* height: 78.6px; */
+        height: 81.27px;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
-        top: 13.3px;
+        /* top: 13.3px; */
         height: 85.26px;
+        /* top: 85.267px; */
+        top: -85.267px;
     }
 
     .home-section .container .home-content .home-content-container .home-consult-button {
@@ -2441,23 +2456,27 @@ footer .footer-title {
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .digit {
         font-size: 0.39rem;
-        padding-top: 0.29rem;
+        /* padding-top: 0.29rem; */
+        top: -3.326rem;
     }
 
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li .line-between {
         border-bottom: 0.038rem solid #404040;
         width: 3.2rem;
-        top: 2.15rem;
+        /* top: 2.15rem; */
+        top: -5.27rem;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li span {
         /* height: 2.8rem; */
-        height: 3.07rem;
+        /* height: 3.07rem; */
+        height: 3.17rem;
     }
     
     .home-section .container .home-content .home-content-container .home-timer .timer-content-container .timer-content .timer-items-container ul li img {
-        top: 0.52rem;
+        /* top: 0.52rem; */
         height: 3.33rem;
+        top: -3.33rem;
     }
 
     .home-section .container .home-content .home-content-container .home-consult-button {
