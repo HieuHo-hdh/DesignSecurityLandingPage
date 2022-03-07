@@ -11,6 +11,11 @@
 }
 
 @font-face {
+    font-family: 'Muli SemiBold';
+    src: url('../fonts/Muli-SemiBold.ttf');
+}
+
+@font-face {
     font-family: 'Muli Bold';
     src: url('../fonts/Muli-Bold.ttf');
 }
@@ -930,6 +935,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: self-end;
+    align-items: flex-end;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button { 
@@ -945,7 +951,7 @@ button {
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button a {
@@ -2229,7 +2235,7 @@ footer .footer-title {
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
-        border: 0.66px solid #ffffff;
+        border: 1.33px solid #ffffff;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
@@ -2795,7 +2801,7 @@ footer .footer-title {
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container button:hover {
-        border: 0.02rem solid #ffffff;
+        border: 0.04rem solid #ffffff;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-button-container .request-button {
@@ -2822,5 +2828,12 @@ footer .footer-title {
 
     footer .footer-title {
         font-size: 0.46875rem;
+    }
+}
+
+/* For safari */
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    .home-section .container .home-content .home-content-container .home-title {
+        font-family: 'Muli Bold';
     }
 }
