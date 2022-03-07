@@ -2,22 +2,22 @@
     font-family: 'Muli Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('../fonts/Muli-Regular.ttf');
+    src: url('../fonts/Muli-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Muli Light';
-    src: url('../fonts/Muli Light.ttf');
+    src: url('../fonts/Muli Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Muli SemiBold';
-    src: url('../fonts/Muli-SemiBold.ttf');
+    src: url('../fonts/Muli-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Muli Bold';
-    src: url('../fonts/Muli-Bold.ttf');
+    src: url('../fonts/Muli-Bold.ttf') format('truetype');
 }
 
 @font-face {
@@ -2841,25 +2841,59 @@ footer .footer-title {
 }
 
 /* For safari */
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
-    .home-section .container .home-content .home-content-container .home-title {
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+    /* .home-section .container .home-content .home-content-container .home-title {
         font-family: 'Muli SemiBold' !important;
-    }
+    } */
+
+    /* @media screen {
+        .home-section .container .home-content .home-content-container .home-title {
+            font-family: 'Muli SemiBold' !important;
+        }
+    } */
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Safari and Chrome */
+    /* .home-section .container .home-content .home-content-container .home-title {
+        font-family: 'Muli SemiBold';
+    } */
+
+    /* Safari only override */
+    /* @media screen {
+        .home-section .container .home-content .home-content-container .home-title {
+            font-family: 'Muli SemiBold';
+        }
+    } */
+
+
+
+    /* @media {
+        .home-section .container .home-content .home-content-container .home-title {
+            font-family: 'Muli SemiBold';
+        }
+    } */
 }
 
 @media not all and (min-resolution:.001dpcm)
 { 
-    @supports (-webkit-appearance:none) {
-    .safari_only { 
+    /* @supports (-webkit-appearance:none) {
+        .home-section .container .home-content .home-content-container .home-title {
+            font-family: 'Muli SemiBold';
+        }
+    } */
 
-    }
-    .home-section .container .home-content .home-content-container .home-title {
-        font-family: 'Muli SemiBold' !important;
-    }
-}}
-
-@supports selector(:nth-child(1 of x)) {
-    .home-section .container .home-content .home-content-container .home-title {
-        font-family: 'Muli SemiBold' !important;
-    }
+    /* .home-section .container .home-content .home-content-container .home-title {
+        font-family: 'Muli SemiBold';
+    } */
 }
+
+/* @media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+        .selector { property:value; } 
+        .home-section .container .home-content .home-content-container .home-title {
+            font-family: 'Muli SemiBold';
+        }
+    } 
+} */
