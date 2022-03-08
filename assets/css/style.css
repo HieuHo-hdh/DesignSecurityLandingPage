@@ -163,6 +163,13 @@ button {
     font-weight: 700;
 }
 
+.navbar .navbar-menu ul .menu-item.active {
+    border: 0px;
+    background: #FFFFFF;
+    color: #157FFB;
+    font-weight: 700;
+}
+
 .navbar .navbar-menu ul li .contact-button-container {
     height: calc(100% - 46px);
     margin: 23px 0;
@@ -1177,20 +1184,22 @@ footer .footer-title {
         padding: 0;
     }
 
-    .navbar .app-sidebar .app-sidebar-content .menu-container ul .menu-item {
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul .mobile-menu-item {
         height: 6.12rem;
+        margin: 0 1.6rem;
         padding: 0 2.4rem;
     }
 
-    .navbar .app-sidebar .app-sidebar-content .menu-container ul .menu-item {
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul .mobile-menu-item {
         text-decoration: none;
         color: #666666;
         line-height: 6.12rem;
         font-size: 2.16rem;
         font-weight: 400;
+        border-radius: 1.3125rem;
     }
 
-    .navbar .app-sidebar .app-sidebar-content .menu-container ul .menu-item.active {
+    .navbar .app-sidebar .app-sidebar-content .menu-container ul .mobile-menu-item.active {
         background: #157FFB;
         color: #ffffff;
         font-family: 'Muli Bold';

@@ -83,3 +83,10 @@ function setActiveNavigation(event) {
     menuItem[0].className="menu-item"
     event.className="menu-item active";
 }
+
+function setMobileActiveNavigation(event) {
+    var menuItem = document.getElementsByClassName("mobile-menu-item active");
+    if (menuItem.length > 0)
+    menuItem[0].className="mobile-menu-item"
+    event.className="mobile-menu-item active";
+}
