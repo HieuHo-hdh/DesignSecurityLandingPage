@@ -555,7 +555,8 @@ button {
     align-items: center;
     place-content: center;
     height: 60px;
-    padding: 0 105px;
+    /* padding: 0 105px; */
+    padding: 0 60px;
 }
 
 .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
@@ -2005,7 +2006,8 @@ footer .footer-title {
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container {
         height: 40px;
-        padding: 0 72px;
+        /* padding: 0 72px; */
+        padding: 0 40px;
     }
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
@@ -2566,7 +2568,8 @@ footer .footer-title {
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container {
         height: 1.5625rem;
-        padding: 0 2.8125rem;
+        /* padding: 0 2.8125rem; */
+        padding: 0 1.5625rem;
     }
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container .content {
