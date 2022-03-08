@@ -186,6 +186,7 @@ button {
     padding: 0 28px;
     border-radius: 12px;
     cursor: pointer;
+    height: 100%;
 }
 
 .mobile-navbar {
@@ -919,6 +920,7 @@ button {
     display: flex;
     flex-direction: column;
     align-self: center;
+    padding-bottom: 5.76px;
 }
 
 .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
@@ -2231,6 +2233,7 @@ footer .footer-title {
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
         width: 280px;
+        padding-bottom: 3.84px;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
@@ -2798,6 +2801,7 @@ footer .footer-title {
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container {
         width: 10.9375rem;
+        padding-bottom: 0.15rem;
     }
 
     .ready-to-protect-section .ready-to-protect-container .ready-to-protect-content-container .ready-to-protect-title {
