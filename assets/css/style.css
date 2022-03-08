@@ -196,7 +196,7 @@ button {
 .home-section {
     margin-top: 170px;
     margin-bottom: 63.34px;
-    min-height: calc(100vh - 180px - 63.34px);
+    /* min-height: calc(100vh - 180px - 63.34px); */
 }
 
 .home-section .dots {
@@ -1777,7 +1777,7 @@ footer .footer-title {
     .home-section {
         margin-bottom: 42.23px;
         margin-top: 113.3px;
-        min-height: calc(100vh - 113.3px - 42.23px);
+        /* min-height: calc(100vh - 113.3px - 42.23px); */
     }
 
     .home-section .dots {
@@ -2336,7 +2336,7 @@ footer .footer-title {
     .home-section {
         margin-bottom: 1.65rem;
         margin-top: 4.427rem;
-        min-height: calc(100vh - 4.427rem -  1.65rem);
+        /* min-height: calc(100vh - 4.427rem -  1.65rem); */
     }
 
     .home-section .dots {
