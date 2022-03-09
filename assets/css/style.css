@@ -197,7 +197,6 @@ button {
 .home-section {
     margin-top: 170px;
     margin-bottom: 63.34px;
-    /* min-height: calc(100vh - 180px - 63.34px); */
 }
 
 .home-section .dots {
@@ -555,7 +554,6 @@ button {
     align-items: center;
     place-content: center;
     height: 60px;
-    /* padding: 0 105px; */
     padding: 0 60px;
 }
 
@@ -2006,7 +2004,6 @@ footer .footer-title {
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container {
         height: 40px;
-        /* padding: 0 72px; */
         padding: 0 40px;
     }
 
@@ -2341,7 +2338,6 @@ footer .footer-title {
     .home-section {
         margin-bottom: 1.65rem;
         margin-top: 4.427rem;
-        /* min-height: calc(100vh - 4.427rem -  1.65rem); */
     }
 
     .home-section .dots {
@@ -2568,7 +2564,6 @@ footer .footer-title {
 
     .motivation-section .applications .applications-grid-container .grid-item .card-container .card .content-container {
         height: 1.5625rem;
-        /* padding: 0 2.8125rem; */
         padding: 0 1.5625rem;
     }
 
@@ -2854,61 +2849,3 @@ footer .footer-title {
         font-size: 0.46875rem;
     }
 }
-
-/* For safari */
-@media screen and (-webkit-min-device-pixel-ratio:0) {  
-    /* .home-section .container .home-content .home-content-container .home-title {
-        font-family: 'Muli SemiBold' !important;
-    } */
-
-    /* @media screen {
-        .home-section .container .home-content .home-content-container .home-title {
-            font-family: 'Muli SemiBold' !important;
-        }
-    } */
-}
-
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    /* Safari and Chrome */
-    /* .home-section .container .home-content .home-content-container .home-title {
-        font-family: 'Muli SemiBold';
-    } */
-
-    /* Safari only override */
-    /* @media screen {
-        .home-section .container .home-content .home-content-container .home-title {
-            font-family: 'Muli SemiBold';
-        }
-    } */
-
-
-
-    /* @media {
-        .home-section .container .home-content .home-content-container .home-title {
-            font-family: 'Muli SemiBold';
-        }
-    } */
-}
-
-@media not all and (min-resolution:.001dpcm)
-{ 
-    /* @supports (-webkit-appearance:none) {
-        .home-section .container .home-content .home-content-container .home-title {
-            font-family: 'Muli SemiBold';
-        }
-    } */
-
-    /* .home-section .container .home-content .home-content-container .home-title {
-        font-family: 'Muli SemiBold';
-    } */
-}
-
-/* @media not all and (min-resolution:.001dpcm) { 
-    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
-        .selector { property:value; } 
-        .home-section .container .home-content .home-content-container .home-title {
-            font-family: 'Muli SemiBold';
-        }
-    } 
-} */
